@@ -68,10 +68,10 @@ void update() {
 		}
 		readergetvnumber.close();
 		if (version != cversion) {
-			//stop = "stop"; //close this program
-			//CString str = "C:/DemoApp/update/daupdate.vbs"; //Start install of new version
-			//CString action = "open";
-			//ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+			stop = "stop"; //close this program
+			CString str = "C:/DemoApp/daupdate.vbs"; //Start install of new version
+			CString action = "open";
+			ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
 			cout << "New version" << endl;
 		}
 		else { //TAKE AWAY
