@@ -53,7 +53,6 @@ void update() {
 
 		Sleep(500);
 	}
-	Sleep(1000);
 	if (updateabort < 50) { //If the update failed to download it will still move on
 		ifstream readergetvnumber("C:/DemoApp/daversion.txt"); //Actually get the full version number
 		if (!readergetvnumber) {
@@ -69,10 +68,13 @@ void update() {
 		readergetvnumber.close();
 		if (version != cversion) {
 			stop = "stop"; //close this program
+			cout << "New version" << endl;
+			CString str2 = "C:/DemoApp/Updating.vbs"; //Show that its updating
+			CString action2 = "open";
+			ShellExecute(NULL, action2, str2, NULL, NULL, SW_SHOW);
 			CString str = "C:/DemoApp/daupdate.vbs"; //Start install of new version
 			CString action = "open";
 			ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
-			cout << "New version" << endl;
 		}
 		else { //TAKE AWAY
 			cout << "Same version " << endl;
