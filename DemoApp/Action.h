@@ -55,10 +55,28 @@ void actionvoid() {
 
 	if (updateabort < 50) { //If the update failed to download it will still move on
 		if (letter == 'a') {
-			cout << "Action" << endl;
+			cout << "Action for all sections" << endl;
 			CString str = "C:/DemoApp/hello.vbs";
 			CString action = "open";
 			ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+		}
+		else if (letter == 't') {
+			cout << "Action for timed hello" << endl;
+			stoptime = "";
+			while (stoptime != "stop") {
+				GetLocalTime(&lt);
+				second = std::to_string(lt.wSecond);
+				if (second != lasttime) {
+					if (second == "0" || second == "10" || second == "20" || second == "30" || second == "40" || second == "50") {
+						CString str = "C:/DemoApp/hello.vbs";
+						CString action = "open";
+						ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+						stoptime = "stop";
+					}
+				}
+				//Sleep(5);
+				lasttime = second;
+			}
 		}
 		else { //TAKE AWAY
 			cout << "No action" << endl;
