@@ -16,6 +16,8 @@
 
 using namespace std;
 
+char letter2; //Need another one
+
 void actionvoid() {
 	ofstream writeractioncheck("C:/DemoApp/daaction.txt"); //Writes to demo app version file so it knows when the knew version has downloaded
 	if (!writeractioncheck) {
@@ -54,6 +56,16 @@ void actionvoid() {
 	}
 
 	if (updateabort < 50) { //If the update failed to download it will still move on
+		ifstream sectionreader("C:/DemoApp/sectionkey.txt"); //Check section number... If section number is matching then play sound
+		if (!sectionreader) {
+			sectionkey == "0";
+		}
+		else {
+			sectionkey = "";
+			sectionreader.get(letter2);
+			sectionkey += letter2;
+		}
+		sectionreader.close();
 		if (letter == 'a') {
 			cout << "Action for all sections" << endl;
 			CString str = "C:/DemoApp/hello.vbs";
@@ -62,6 +74,13 @@ void actionvoid() {
 		}
 		else if (letter == 't') {
 			cout << "Action for timed hello" << endl;
+			ofstream writerstatuscheck("C:/DemoApp/status.txt");
+			if (!writerstatuscheck) {
+			}
+			else {
+				writerstatuscheck << "P";
+			}
+			writerstatuscheck.close();
 			stoptime = "";
 			while (stoptime != "stop") {
 				GetLocalTime(&lt);
@@ -76,6 +95,61 @@ void actionvoid() {
 				}
 				//Sleep(5);
 				lasttime = second;
+			}
+		}
+		else if (letter == '!') {
+			if (sectionkey == "1") { //need to match
+				cout << "Action for this section: section 1" << endl;
+				CString str = "C:/DemoApp/hello.vbs";
+				CString action = "open";
+				ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+			}
+			else {
+				cout << "Action for section 1 (not this section)" << endl;
+			}
+		}
+		else if (letter == '@') {
+			if (sectionkey == "2") { //need to match
+				cout << "Action for this section: section 2" << endl;
+				CString str = "C:/DemoApp/hello.vbs";
+				CString action = "open";
+				ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+			}
+			else {
+				cout << "Action for section 2 (not this section)" << endl;
+			}
+		}
+		else if (letter == '#') {
+			if (sectionkey == "3") { //need to match
+				cout << "Action for this section: section 3" << endl;
+				CString str = "C:/DemoApp/hello.vbs";
+				CString action = "open";
+				ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+			}
+			else {
+				cout << "Action for section 3 (not this section)" << endl;
+			}
+		}
+		else if (letter == '$') {
+			if (sectionkey == "4") { //need to match
+				cout << "Action for this section: section 4" << endl;
+				CString str = "C:/DemoApp/hello.vbs";
+				CString action = "open";
+				ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+			}
+			else {
+				cout << "Action for section 4 (not this section)" << endl;
+			}
+		}
+		else if (letter == '%') {
+			if (sectionkey == "5") { //need to match
+				cout << "Action for this section: section 5" << endl;
+				CString str = "C:/DemoApp/hello.vbs";
+				CString action = "open";
+				ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+			}
+			else {
+				cout << "Action for section 5 (not this section)" << endl;
 			}
 		}
 		else { //TAKE AWAY

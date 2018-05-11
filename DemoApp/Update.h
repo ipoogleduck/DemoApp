@@ -68,6 +68,14 @@ void update() {
 		readergetvnumber.close();
 		if (version != cversion) {
 			stop = "stop"; //close this program
+			isupdating = "Yes";
+			ofstream writerstatuscheck("C:/DemoApp/status.txt");
+			if (!writerstatuscheck) {
+			}
+			else {
+				writerstatuscheck << "U";
+			}
+			writerstatuscheck.close();
 			cout << "New version" << endl;
 			CString str2 = "C:/DemoApp/Updating.vbs"; //Show that its updating
 			CString action2 = "open";
