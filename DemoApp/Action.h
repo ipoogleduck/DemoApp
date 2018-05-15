@@ -58,7 +58,6 @@ void actionvoid() {
 	if (updateabort < 50) { //If the update failed to download it will still move on
 		ifstream sectionreader("C:/DemoApp/sectionkey.txt"); //Check section number... If section number is matching then play sound
 		if (!sectionreader) {
-			sectionkey == "0";
 		}
 		else {
 			sectionkey = "";
@@ -71,6 +70,64 @@ void actionvoid() {
 			CString str = "C:/DemoApp/hello.vbs";
 			CString action = "open";
 			ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+		}
+		else if (letter == 'g') {
+			cout << "Action for timed GB mix" << endl;
+			ofstream writerstatuscheck("C:/DemoApp/status.txt");
+			if (!writerstatuscheck) {
+			}
+			else {
+				writerstatuscheck << "P";
+			}
+			writerstatuscheck.close();
+			stoptime = "";
+			while (stoptime != "stop") {
+				GetLocalTime(&lt);
+				second = std::to_string(lt.wSecond);
+				if (second != lasttime) {
+					if (second == "0") {
+						ifstream sectionreader("C:/DemoApp/sectionkey.txt");
+						if (!sectionreader) {
+						}
+						else {
+							sectionkey = "";
+							sectionreader.get(letter2);
+							sectionkey += letter2;
+						}
+						sectionreader.close();
+						if (sectionkey == "1") { //need to match
+							cout << "MP3 started for section 1 (Mid Row)" << endl;
+							CString str = "C:/DemoApp/MidRow.vbs";
+							CString action = "open";
+							ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+						}
+						else if (sectionkey == "2") { //need to match
+							cout << "MP3 started for section 2 (Right Row)" << endl;
+							CString str = "C:/DemoApp/RightRow.vbs";
+							CString action = "open";
+							ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+						}
+						else if (sectionkey == "3") { //need to match
+							cout << "MP3 started for section 3 (Left Row)" << endl;
+							CString str = "C:/DemoApp/LeftRow.vbs";
+							CString action = "open";
+							ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+						}
+						else if (sectionkey == "4") { //need to match
+							cout << "MP3 started for section 4 (Side Base)" << endl;
+							CString str = "C:/DemoApp/SideBase.vbs";
+							CString action = "open";
+							ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+						}
+						else {
+							cout << "Section " << sectionkey << " is not included in this performance" << endl;
+						}
+						stoptime = "stop";
+					}
+				}
+				//Sleep(5);
+				lasttime = second;
+			}
 		}
 		else if (letter == 't') {
 			cout << "Action for timed hello" << endl;
