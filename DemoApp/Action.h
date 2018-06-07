@@ -17,7 +17,14 @@
 using namespace std;
 
 char letter2; //Need another one
+string startvisual; //Start DAVisual
 
+
+void DAVisual() {
+	CString str = "C:/DemoApp/DAVisual.exe";
+	CString action = "open";
+	ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+}
 void actionvoid() {
 	ofstream writeractioncheck("C:/DemoApp/daaction.txt"); //Writes to demo app version file so it knows when the knew version has downloaded
 	if (!writeractioncheck) {
@@ -100,6 +107,17 @@ void actionvoid() {
 							CString str = "C:/DemoApp/WiiSection1.vbs";
 							CString action = "open";
 							ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+							//DA VISUAL!!!!
+							while (startvisual != "End") {
+								GetLocalTime(&lt);
+								second = std::to_string(lt.wSecond);
+								if (second == "7" || second == "8" || second == "9" || second == "10" || second == "11" || second == "12" || second == "13" || second == "14" || second == "15" || second == "16") {
+									DAVisual();
+								}
+								else if (second == "?") {
+
+								}
+							}
 						}
 						else if (sectionkey == "2") { //need to match
 							cout << "MP3 started for section 2" << endl;
@@ -164,24 +182,110 @@ void actionvoid() {
 							CString str = "C:/DemoApp/MidRow.vbs";
 							CString action = "open";
 							ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+							//DA VISUAL!!!!
+							while (second != "40") {
+								GetLocalTime(&lt);
+								second = std::to_string(lt.wSecond);
+								DAVisual();
+							}
 						}
 						else if (sectionkey == "2") { //need to match
 							cout << "MP3 started for section 2 (Right Row)" << endl;
 							CString str = "C:/DemoApp/RightRow.vbs";
 							CString action = "open";
 							ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+							while (second != "40") {
+								GetLocalTime(&lt);
+								second = std::to_string(lt.wSecond);
+								if (second != lasttime) {
+									if (second == "9") {
+										DAVisual();
+									}
+									if (second == "11") {
+										DAVisual();
+									}
+									if (second == "12") {
+										DAVisual();
+									}
+									if (second == "13") {
+										DAVisual();
+									}
+									if (second == "27") {
+										DAVisual();
+									}
+									if (second == "29") {
+										DAVisual();
+									}
+									if (second == "30") {
+										DAVisual();
+									}
+									if (second == "31") {
+										DAVisual();
+									}
+									if (second == "35") {
+										DAVisual();
+									}
+									if (second == "37") {
+										DAVisual();
+									}
+									if (second == "38") {
+										DAVisual();
+									}
+									if (second == "39") {
+										DAVisual();
+									}
+								}
+								lasttime = second;
+							}
 						}
 						else if (sectionkey == "3") { //need to match
 							cout << "MP3 started for section 3 (Left Row)" << endl;
 							CString str = "C:/DemoApp/LeftRow.vbs";
 							CString action = "open";
 							ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+							while (second != "18") {
+								GetLocalTime(&lt);
+								second = std::to_string(lt.wSecond);
+							}
+							while (second != "26") {
+								GetLocalTime(&lt);
+								second = std::to_string(lt.wSecond);
+								DAVisual();
+							}
+							while (second != "40") {
+								GetLocalTime(&lt);
+								second = std::to_string(lt.wSecond);
+								if (second != lasttime) {
+									if (second == "35") {
+										DAVisual();
+									}
+									if (second == "37") {
+										DAVisual();
+									}
+									if (second == "38") {
+										DAVisual();
+									}
+									if (second == "39") {
+										DAVisual();
+									}
+								}
+								lasttime = second;
+							}
 						}
 						else if (sectionkey == "4") { //need to match
 							cout << "MP3 started for section 4 (Side Base)" << endl;
 							CString str = "C:/DemoApp/SideBase.vbs";
 							CString action = "open";
 							ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+							while (second != "10") {
+								GetLocalTime(&lt);
+								second = std::to_string(lt.wSecond);
+							}
+							while (second != "34") {
+								GetLocalTime(&lt);
+								second = std::to_string(lt.wSecond);
+								DAVisual();
+							}
 						}
 						else {
 							cout << "Section " << sectionkey << " is not included in this performance" << endl;
@@ -207,7 +311,7 @@ void actionvoid() {
 				GetLocalTime(&lt);
 				second = std::to_string(lt.wSecond);
 				if (second != lasttime) {
-					if (second == "0" || second == "10" || second == "20" || second == "30" || second == "40" || second == "50") {
+					if (second == "0" || second == "10" || second == "20" || second == "30" || second == "40" || second == "50" || second == "5" || second == "15" || second == "25" || second == "35" || second == "45" || second == "55") {
 						CString str = "C:/DemoApp/hello.vbs";
 						CString action = "open";
 						ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
