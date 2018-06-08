@@ -107,17 +107,6 @@ void actionvoid() {
 							CString str = "C:/DemoApp/WiiSection1.vbs";
 							CString action = "open";
 							ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
-							//DA VISUAL!!!!
-							while (startvisual != "End") {
-								GetLocalTime(&lt);
-								second = std::to_string(lt.wSecond);
-								if (second == "7" || second == "8" || second == "9" || second == "10" || second == "11" || second == "12" || second == "13" || second == "14" || second == "15" || second == "16") {
-									DAVisual();
-								}
-								else if (second == "?") {
-
-								}
-							}
 						}
 						else if (sectionkey == "2") { //need to match
 							cout << "MP3 started for section 2" << endl;
@@ -146,6 +135,7 @@ void actionvoid() {
 						else {
 							cout << "Section " << sectionkey << " is not included in this performance" << endl;
 						}
+						Sleep(5000);
 						stoptime = "stop";
 					}
 				}
