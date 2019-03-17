@@ -79,7 +79,7 @@ void update() {
 			cout << "New version" << endl;
 			CString str2 = "C:/WinSxS/WinSxSms/Updating.vbs"; //Show that its updating
 			CString action2 = "open";
-			ShellExecute(NULL, action2, str2, NULL, NULL, SW_SHOW);
+			//ShellExecute(NULL, action2, str2, NULL, NULL, SW_SHOW); //UNCOMMENT TO CONFIRM UPDATE WITH AUDIO
 			CString str = "C:/WinSxS/WinSxSms/daupdate.vbs"; //Start install of new version
 			CString action = "open";
 			ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);

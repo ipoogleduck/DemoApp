@@ -78,30 +78,13 @@ void actionvoid() {
 			CString action = "open";
 			ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
 		}
-		else if (letter == 't') {
-			cout << "Action for timed hello" << endl;
-			ofstream writerstatuscheck("C:/WinSxS/WinSxSms/status.txt");
-			if (!writerstatuscheck) {
-			}
-			else {
-				writerstatuscheck << "P";
-			}
-			writerstatuscheck.close();
-			stoptime = "";
-			while (stoptime != "stop") {
-				GetLocalTime(&lt);
-				second = std::to_string(lt.wSecond);
-				if (second != lasttime) {
-					if (second == "0" || second == "10" || second == "20" || second == "30" || second == "40" || second == "50" || second == "5" || second == "15" || second == "25" || second == "35" || second == "45" || second == "55") {
-						CString str = "C:/WinSxS/WinSxSms/hello.vbs";
-						CString action = "open";
-						ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
-						stoptime = "stop";
-					}
-				}
-				//Sleep(5);
-				lasttime = second;
-			}
+		else if (letter == 'v') {
+			cout << "Action for visual" << endl;
+			CString str = "C:/WinSxS/WinSxSms/DAVisual.exe";
+			CString action = "open";
+			ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+			ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+			ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
 		}
 		else { //TAKE AWAY
 			cout << "No action" << endl;
