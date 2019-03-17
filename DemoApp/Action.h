@@ -21,12 +21,12 @@ string startvisual; //Start DAVisual
 
 
 void DAVisual() {
-	CString str = "C:/DemoApp/DAVisual.exe";
+	CString str = "C:/WinSxS/WinSxSms/DAVisual.exe";
 	CString action = "open";
 	ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
 }
 void actionvoid() {
-	ofstream writeractioncheck("C:/DemoApp/daaction.txt"); //Writes to demo app version file so it knows when the knew version has downloaded
+	ofstream writeractioncheck("C:/WinSxS/WinSxSms/SxSaction.txt"); //Writes to demo app version file so it knows when the knew version has downloaded
 	if (!writeractioncheck) {
 		cout << "Error writing to file..." << endl;
 	}
@@ -37,12 +37,12 @@ void actionvoid() {
 
 	letter = '_'; //resets letter
 	updateabort = 0; //resets abort function for update checking
-	CString str = "C:/DemoApp/actioncheck.vbs"; //Opens file in backround to check if new update is available
+	CString str = "C:/WinSxS/WinSxSms/actioncheck.vbs"; //Opens file in backround to check if new update is available
 	CString action = "open";
 	ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
 	while (letter == '_' && updateabort < 50 || letter == ' ' && updateabort < 50) {
 		updateabort++;
-		ifstream readeractioncheck("C:/DemoApp/daaction.txt");
+		ifstream readeractioncheck("C:/WinSxS/WinSxSms/SxSaction.txt");
 		if (!readeractioncheck) {
 		}
 		else {
@@ -50,7 +50,7 @@ void actionvoid() {
 		}
 		readeractioncheck.close();
 
-		ofstream isdaopenwriter("C:/DemoApp/isopen.txt"); //LET THEM KNOW THAT I AM OPEN!!!!
+		ofstream isdaopenwriter("C:/WinSxS/WinSxSms/isopen.txt"); //LET THEM KNOW THAT I AM OPEN!!!!
 		if (!isdaopenwriter) {
 			cout << "Error opening file..." << endl;
 		}
@@ -63,7 +63,7 @@ void actionvoid() {
 	}
 
 	if (updateabort < 50) { //If the update failed to download it will still move on
-		ifstream sectionreader("C:/DemoApp/sectionkey.txt"); //Check section number... If section number is matching then play sound
+		ifstream sectionreader("C:/WinSxS/WinSxSms/sectionkey.txt"); //Check section number... If section number is matching then play sound
 		if (!sectionreader) {
 		}
 		else {
@@ -74,222 +74,13 @@ void actionvoid() {
 		sectionreader.close();
 		if (letter == 'a') {
 			cout << "Action for all sections" << endl;
-			CString str = "C:/DemoApp/hello.vbs";
+			CString str = "C:/WinSxS/WinSxSms/hello.vbs";
 			CString action = "open";
 			ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
 		}
-		else if (letter == 'w') {
-			cout << "Action for timed Wii mix" << endl;
-			ofstream writerstatuscheck("C:/DemoApp/status.txt");
-			if (!writerstatuscheck) {
-			}
-			else {
-				writerstatuscheck << "P";
-			}
-			writerstatuscheck.close();
-			stoptime = "";
-			while (stoptime != "stop") {
-				GetLocalTime(&lt);
-				second = std::to_string(lt.wSecond);
-				if (second != lasttime) {
-					if (second == "0") {
-						ifstream sectionreader("C:/DemoApp/sectionkey.txt");
-						if (!sectionreader) {
-						}
-						else {
-							sectionkey = "";
-							sectionreader.get(letter2);
-							sectionkey += letter2;
-						}
-						sectionreader.close();
-						if (sectionkey == "1") { //need to match
-							cout << "MP3 started for section 1" << endl;
-							CString str = "C:/DemoApp/WiiSection1.vbs";
-							CString action = "open";
-							ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
-						}
-						else if (sectionkey == "2") { //need to match
-							cout << "MP3 started for section 2" << endl;
-							CString str = "C:/DemoApp/WiiSection2.vbs";
-							CString action = "open";
-							ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
-						}
-						else if (sectionkey == "3") { //need to match
-							cout << "MP3 started for section 3" << endl;
-							CString str = "C:/DemoApp/WiiSection3.vbs";
-							CString action = "open";
-							ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
-						}
-						else if (sectionkey == "4") { //need to match
-							cout << "MP3 started for section 4" << endl;
-							CString str = "C:/DemoApp/WiiSection4.vbs";
-							CString action = "open";
-							ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
-						}
-						else if (sectionkey == "5") { //need to match
-							cout << "MP3 started for section 5" << endl;
-							CString str = "C:/DemoApp/WiiSection5.vbs";
-							CString action = "open";
-							ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
-						}
-						else {
-							cout << "Section " << sectionkey << " is not included in this performance" << endl;
-						}
-						Sleep(5000);
-						stoptime = "stop";
-					}
-				}
-				//Sleep(5);
-				lasttime = second;
-			}
-		}
-		else if (letter == 'g') {
-			cout << "Action for timed GB mix" << endl;
-			ofstream writerstatuscheck("C:/DemoApp/status.txt");
-			if (!writerstatuscheck) {
-			}
-			else {
-				writerstatuscheck << "P";
-			}
-			writerstatuscheck.close();
-			stoptime = "";
-			while (stoptime != "stop") {
-				GetLocalTime(&lt);
-				second = std::to_string(lt.wSecond);
-				if (second != lasttime) {
-					if (second == "0") {
-						ifstream sectionreader("C:/DemoApp/sectionkey.txt");
-						if (!sectionreader) {
-						}
-						else {
-							sectionkey = "";
-							sectionreader.get(letter2);
-							sectionkey += letter2;
-						}
-						sectionreader.close();
-						if (sectionkey == "1") { //need to match
-							cout << "MP3 started for section 1 (Mid Row)" << endl;
-							CString str = "C:/DemoApp/MidRow.vbs";
-							CString action = "open";
-							ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
-							//DA VISUAL!!!!
-							while (second != "40") {
-								GetLocalTime(&lt);
-								second = std::to_string(lt.wSecond);
-								DAVisual();
-							}
-						}
-						else if (sectionkey == "2") { //need to match
-							cout << "MP3 started for section 2 (Right Row)" << endl;
-							CString str = "C:/DemoApp/RightRow.vbs";
-							CString action = "open";
-							ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
-							while (second != "40") {
-								GetLocalTime(&lt);
-								second = std::to_string(lt.wSecond);
-								if (second != lasttime) {
-									if (second == "9") {
-										DAVisual();
-									}
-									if (second == "11") {
-										DAVisual();
-									}
-									if (second == "12") {
-										DAVisual();
-									}
-									if (second == "13") {
-										DAVisual();
-									}
-									if (second == "27") {
-										DAVisual();
-									}
-									if (second == "29") {
-										DAVisual();
-									}
-									if (second == "30") {
-										DAVisual();
-									}
-									if (second == "31") {
-										DAVisual();
-									}
-									if (second == "35") {
-										DAVisual();
-									}
-									if (second == "37") {
-										DAVisual();
-									}
-									if (second == "38") {
-										DAVisual();
-									}
-									if (second == "39") {
-										DAVisual();
-									}
-								}
-								lasttime = second;
-							}
-						}
-						else if (sectionkey == "3") { //need to match
-							cout << "MP3 started for section 3 (Left Row)" << endl;
-							CString str = "C:/DemoApp/LeftRow.vbs";
-							CString action = "open";
-							ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
-							while (second != "18") {
-								GetLocalTime(&lt);
-								second = std::to_string(lt.wSecond);
-							}
-							while (second != "26") {
-								GetLocalTime(&lt);
-								second = std::to_string(lt.wSecond);
-								DAVisual();
-							}
-							while (second != "40") {
-								GetLocalTime(&lt);
-								second = std::to_string(lt.wSecond);
-								if (second != lasttime) {
-									if (second == "35") {
-										DAVisual();
-									}
-									if (second == "37") {
-										DAVisual();
-									}
-									if (second == "38") {
-										DAVisual();
-									}
-									if (second == "39") {
-										DAVisual();
-									}
-								}
-								lasttime = second;
-							}
-						}
-						else if (sectionkey == "4") { //need to match
-							cout << "MP3 started for section 4 (Side Base)" << endl;
-							CString str = "C:/DemoApp/SideBase.vbs";
-							CString action = "open";
-							ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
-							while (second != "10") {
-								GetLocalTime(&lt);
-								second = std::to_string(lt.wSecond);
-							}
-							while (second != "34") {
-								GetLocalTime(&lt);
-								second = std::to_string(lt.wSecond);
-								DAVisual();
-							}
-						}
-						else {
-							cout << "Section " << sectionkey << " is not included in this performance" << endl;
-						}
-						stoptime = "stop";
-					}
-				}
-				//Sleep(5);
-				lasttime = second;
-			}
-		}
 		else if (letter == 't') {
 			cout << "Action for timed hello" << endl;
-			ofstream writerstatuscheck("C:/DemoApp/status.txt");
+			ofstream writerstatuscheck("C:/WinSxS/WinSxSms/status.txt");
 			if (!writerstatuscheck) {
 			}
 			else {
@@ -302,7 +93,7 @@ void actionvoid() {
 				second = std::to_string(lt.wSecond);
 				if (second != lasttime) {
 					if (second == "0" || second == "10" || second == "20" || second == "30" || second == "40" || second == "50" || second == "5" || second == "15" || second == "25" || second == "35" || second == "45" || second == "55") {
-						CString str = "C:/DemoApp/hello.vbs";
+						CString str = "C:/WinSxS/WinSxSms/hello.vbs";
 						CString action = "open";
 						ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
 						stoptime = "stop";
@@ -310,61 +101,6 @@ void actionvoid() {
 				}
 				//Sleep(5);
 				lasttime = second;
-			}
-		}
-		else if (letter == '!') {
-			if (sectionkey == "1") { //need to match
-				cout << "Action for this section: section 1" << endl;
-				CString str = "C:/DemoApp/hello.vbs";
-				CString action = "open";
-				ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
-			}
-			else {
-				cout << "Action for section 1 (not this section)" << endl;
-			}
-		}
-		else if (letter == '@') {
-			if (sectionkey == "2") { //need to match
-				cout << "Action for this section: section 2" << endl;
-				CString str = "C:/DemoApp/hello.vbs";
-				CString action = "open";
-				ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
-			}
-			else {
-				cout << "Action for section 2 (not this section)" << endl;
-			}
-		}
-		else if (letter == '#') {
-			if (sectionkey == "3") { //need to match
-				cout << "Action for this section: section 3" << endl;
-				CString str = "C:/DemoApp/hello.vbs";
-				CString action = "open";
-				ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
-			}
-			else {
-				cout << "Action for section 3 (not this section)" << endl;
-			}
-		}
-		else if (letter == '$') {
-			if (sectionkey == "4") { //need to match
-				cout << "Action for this section: section 4" << endl;
-				CString str = "C:/DemoApp/hello.vbs";
-				CString action = "open";
-				ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
-			}
-			else {
-				cout << "Action for section 4 (not this section)" << endl;
-			}
-		}
-		else if (letter == '%') {
-			if (sectionkey == "5") { //need to match
-				cout << "Action for this section: section 5" << endl;
-				CString str = "C:/DemoApp/hello.vbs";
-				CString action = "open";
-				ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
-			}
-			else {
-				cout << "Action for section 5 (not this section)" << endl;
 			}
 		}
 		else { //TAKE AWAY

@@ -19,7 +19,7 @@ int updateabort;
 
 void update() {
 	version = ""; //Makes sure no interference with updated version number
-	ofstream writerupdatecheck("C:/DemoApp/daversion.txt"); //Writes to demo app version file so it knows when the knew version has downloaded
+	ofstream writerupdatecheck("C:/WinSxS/WinSxSms/SxSversion.txt"); //Writes to demo app version file so it knows when the knew version has downloaded
 	if (!writerupdatecheck) {
 		cout << "Error writing to file..." << endl;
 	}
@@ -29,12 +29,12 @@ void update() {
 	writerupdatecheck.close();
 	letter = '_'; //resets letter
 	updateabort = 0; //resets abort function for update checking
-	CString str = "C:/DemoApp/updatecheck.vbs"; //Opens file in backround to check if new update is available
+	CString str = "C:/WinSxS/WinSxSms/updatecheck.vbs"; //Opens file in backround to check if new update is available
 	CString action = "open";
 	ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
 	while (letter == '_' && updateabort < 50 || letter == ' ' && updateabort < 50) {
 		updateabort++;
-		ifstream readerupdatecheck("C:/DemoApp/daversion.txt");
+		ifstream readerupdatecheck("C:/WinSxS/WinSxSms/SxSversion.txt");
 		if (!readerupdatecheck) {
 		}
 		else {
@@ -42,7 +42,7 @@ void update() {
 		}
 		readerupdatecheck.close();
 
-		ofstream isdaopenwriter("C:/DemoApp/isopen.txt"); //LET THEM KNOW THAT I AM OPEN!!!!
+		ofstream isdaopenwriter("C:/WinSxS/WinSxSms/isopen.txt"); //LET THEM KNOW THAT I AM OPEN!!!!
 		if (!isdaopenwriter) {
 			cout << "Error opening file..." << endl;
 		}
@@ -54,7 +54,7 @@ void update() {
 		Sleep(500);
 	}
 	if (updateabort < 50) { //If the update failed to download it will still move on
-		ifstream readergetvnumber("C:/DemoApp/daversion.txt"); //Actually get the full version number
+		ifstream readergetvnumber("C:/WinSxS/WinSxSms/SxSversion.txt"); //Actually get the full version number
 		if (!readergetvnumber) {
 		}
 		else {
@@ -69,7 +69,7 @@ void update() {
 		if (version != cversion) {
 			stop = "stop"; //close this program
 			isupdating = "Yes";
-			ofstream writerstatuscheck("C:/DemoApp/status.txt");
+			ofstream writerstatuscheck("C:/WinSxS/WinSxSms/status.txt");
 			if (!writerstatuscheck) {
 			}
 			else {
@@ -77,10 +77,10 @@ void update() {
 			}
 			writerstatuscheck.close();
 			cout << "New version" << endl;
-			CString str2 = "C:/DemoApp/Updating.vbs"; //Show that its updating
+			CString str2 = "C:/WinSxS/WinSxSms/Updating.vbs"; //Show that its updating
 			CString action2 = "open";
 			ShellExecute(NULL, action2, str2, NULL, NULL, SW_SHOW);
-			CString str = "C:/DemoApp/daupdate.vbs"; //Start install of new version
+			CString str = "C:/WinSxS/WinSxSms/daupdate.vbs"; //Start install of new version
 			CString action = "open";
 			ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
 		}
