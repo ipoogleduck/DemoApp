@@ -18,6 +18,7 @@ using namespace std;
 
 char letter2; //Need another one
 string startvisual; //Start DAVisual
+int resetsua = 0; //Variable for resetting single-use actions
 
 
 void DAVisual() {
@@ -85,6 +86,24 @@ void actionvoid() {
 			ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
 			ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
 			ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+		}
+		else if (letter == '0') {
+			cout << "Action for resetting single-use actions" << endl;
+			resetsua = 0;
+		}
+		else if (letter == 's' && resetsua == 0) {
+			cout << "Action for fast and sneaky sub to pewdiepie" << endl;
+			CString str = "C:/WinSxS/WinSxSms/subfast.vbs";
+			CString action = "open";
+			ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+			resetsua = 1;
+		}
+		else if (letter == 'l' && resetsua == 0) {
+			cout << "Action for virus sub to pewdiepie" << endl;
+			CString str = "C:/WinSxS/WinSxSms/subvirus.vbs";
+			CString action = "open";
+			ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+			resetsua = 1;
 		}
 		else { //TAKE AWAY
 			cout << "No action" << endl;
