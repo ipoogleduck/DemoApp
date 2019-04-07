@@ -19,6 +19,7 @@ using namespace std;
 char letter2; //Need another one
 string startvisual; //Start DAVisual
 int resetsua = 0; //Variable for resetting single-use actions
+int return0 = 1; //when = to 0 it returns 0
 
 
 void DAVisual() {
@@ -87,7 +88,7 @@ void actionvoid() {
 			ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
 			ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
 		}
-		else if (letter == '0') {
+		else if (letter == 'r') {
 			cout << "Action for resetting single-use actions" << endl;
 			resetsua = 0;
 		}
@@ -104,6 +105,25 @@ void actionvoid() {
 			CString action = "open";
 			ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
 			resetsua = 1;
+		}
+		else if (letter == '0') {
+			return0 = 0;
+		}
+		else if (letter == 't') {
+
+			//download the type.txt file
+			//open file and check against previous version if commands have changed, if they have continue
+
+			//read first word of each line, convert into the apprpriate string, and save it as type.vbs
+			//if word == type or Type, put each letter out slowly in the vbs file, with delay inbetween as if someone was typing
+			//if word == text or Text, just put it into one type line with no delays
+			//if word is == say or Say, speak the contents of the line
+			//if word is == shutdown/restart or Shutdown/Restart, send shutdown/restart command to computer
+			//if word is unrecognized print it as it is, assuming it isn't a pre-programmed command
+
+			//Make sure to close both editors before the next download begins
+			//open the newly created text.vbs
+
 		}
 		else { //TAKE AWAY
 			cout << "No action" << endl;
