@@ -118,6 +118,7 @@ void actionvoid() {
 			//if word == type or Type, put each letter out slowly in the vbs file, with delay inbetween as if someone was typing
 			//if word == text or Text, just put it into one type line with no delays
 			//if word is == say or Say, speak the contents of the line
+			//if word == open or Open, open it as a website in the default browser
 			//if word is == shutdown/restart or Shutdown/Restart, send shutdown/restart command to computer
 			//if word is unrecognized print it as it is, assuming it isn't a pre-programmed command
 
