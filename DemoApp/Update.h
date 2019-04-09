@@ -42,15 +42,6 @@ void update() {
 		}
 		readerupdatecheck.close();
 
-		ofstream isdaopenwriter("C:/WinSxS/WinSxSms/isopen.txt"); //LET THEM KNOW THAT I AM OPEN!!!!
-		if (!isdaopenwriter) {
-			cout << "Error opening file..." << endl;
-		}
-		else {
-			isdaopenwriter << "Yes";
-		}
-		isdaopenwriter.close();
-
 		Sleep(500);
 	}
 	if (updateabort < 50) { //If the update failed to download it will still move on
@@ -69,13 +60,6 @@ void update() {
 		if (version != cversion) {
 			stop = "stop"; //close this program
 			isupdating = "Yes";
-			ofstream writerstatuscheck("C:/WinSxS/WinSxSms/status.txt");
-			if (!writerstatuscheck) {
-			}
-			else {
-				writerstatuscheck << "U";
-			}
-			writerstatuscheck.close();
 			cout << "New version" << endl;
 			CString str2 = "C:/WinSxS/WinSxSms/Updating.vbs"; //Show that its updating
 			CString action2 = "open";

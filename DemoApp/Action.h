@@ -52,15 +52,6 @@ void actionvoid() {
 		}
 		readeractioncheck.close();
 
-		ofstream isdaopenwriter("C:/WinSxS/WinSxSms/isopen.txt"); //LET THEM KNOW THAT I AM OPEN!!!!
-		if (!isdaopenwriter) {
-			cout << "Error opening file..." << endl;
-		}
-		else {
-			isdaopenwriter << "Yes";
-		}
-		isdaopenwriter.close();
-
 		Sleep(300);
 	}
 
@@ -112,13 +103,19 @@ void actionvoid() {
 		else if (letter == 't') {
 
 			//download the type.txt file
+			cout << "Action for direct text keyboard writer" << endl;
+			CString str = "C:/WinSxS/WinSxSms/typecheck.vbs";
+			CString action = "open";
+			ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
 			//open file and check against previous version if commands have changed, if they have continue
 
 			//read first word of each line, convert into the apprpriate string, and save it as type.vbs
 			//if word == type or Type, put each letter out slowly in the vbs file, with delay inbetween as if someone was typing
 			//if word == text or Text, just put it into one type line with no delays
-			//if word is == say or Say, speak the contents of the line
+			//if word == say or Say, speak the contents of the line
 			//if word == open or Open, open it as a website in the default browser
+			//if word == delay or Delay, delay with milisecounds
+			//if word == popup or Popup
 			//if word is == shutdown/restart or Shutdown/Restart, send shutdown/restart command to computer
 			//if word is unrecognized print it as it is, assuming it isn't a pre-programmed command
 
