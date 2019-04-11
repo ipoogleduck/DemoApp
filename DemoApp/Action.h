@@ -105,106 +105,94 @@ void actionvoid() {
 		else if (letter == 't') {
 
 			cout << "Action for direct text keyboard writer" << endl;
-			//download the type.txt file
-			ofstream writertypecheck("C:/WinSxS/WinSxSms/Type.txt"); //Writes to demo app version file so it knows when the knew version has downloaded
-			if (!writertypecheck) {
-				cout << "Error writing to file..." << endl;
-			}
-			else {
-				writertypecheck << "_";
-			}
-			writertypecheck.close();
 
-			letter = '_'; //resets letter
-			updateabort = 0; //resets abort function for update checking
-			CString str = "C:/WinSxS/WinSxSms/typecheck.vbs";
-			CString action = "open";
-			ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
-			while (letter == '_' && updateabort < 50 || letter == ' ' && updateabort < 50) {
-				updateabort++;
-				ifstream readertypecheck("C:/WinSxS/WinSxSms/Type.txt");
-				if (!readertypecheck) {
-				}
-				else {
-					readertypecheck.get(letter);
-				}
-				readertypecheck.close();
+			for (unsigned int i = 1; i <= 5; i++) {
 
-				Sleep(300);
-			}
-			//open file and check against previous version if commands have changed, if they have continue
-			//Get newly downloaded file
-			Type = "";
-			ifstream readertype("C:/WinSxS/WinSxSms/Type.txt");
-			for (int i = 0; !readertype.eof(); i++) {
-				readertype.get(letter);
-				Type += letter;
-			}
-			readertype.close();
-			Type.pop_back();
-			cout << Type << endl;
-
-			//Read the last used file
-			TypeBackup = "";
-			ifstream readertypeBackupcheck("C:/WinSxS/WinSxSms/TypeBackup.txt");
-			if (!readertypeBackupcheck) {
-			}
-			else {
-				for (int i = 0; !readertypeBackupcheck.eof(); i++) {
-					readertypeBackupcheck.get(letter);
-					TypeBackup += letter;
-				}
-				TypeBackup.pop_back();
-			}
-			readertypeBackupcheck.close();
-
-			//Compare strings
-			if (Type != TypeBackup) {
-
-				//temp?? port directly to vbs file
-				ofstream writertypevbscheck("C:/WinSxS/WinSxSms/Type.vbs"); //Writes to demo app version file so it knows when the knew version has downloaded
-				if (!writertypevbscheck) {
+				//download the type.txt file
+				ofstream writertypecheck("C:/WinSxS/WinSxSms/Type.txt"); //Writes to demo app version file so it knows when the knew version has downloaded
+				if (!writertypecheck) {
 					cout << "Error writing to file..." << endl;
 				}
 				else {
-					writertypevbscheck << Type;
+					writertypecheck << "_";
 				}
-				writertypevbscheck.close();
+				writertypecheck.close();
 
-				//read first word of each line, convert into the apprpriate string, and save it as type.vbs
-				//take out all apostrophes: ' ' ' and correct wrond quotes that lean to normal ones """
-				//if word == type or Type, put each letter out slowly in the vbs file, with delay inbetween as if someone was typing
-				//if word == text or Text, just put it into one type line with no delays
-				//if word == say or Say, speak the contents of the line
-				//if word == open or Open, open it as a website in the default browser
-				//if word == delay or Delay, delay with milisecounds
-				//if word == popup or Popup
-				//if word is == shutdown/restart or Shutdown/Restart, send shutdown/restart command to computer
-				//if word is unrecognized print it as it is, assuming it isn't a pre-programmed command
-
-				//Make sure to close both editors before the next download begins
-				//open the newly created Type.vbs
-				CString str = "C:/WinSxS/WinSxSms/Type.vbs";
+				letter = '_'; //resets letter
+				updateabort = 0; //resets abort function for update checking
+				CString str = "C:/WinSxS/WinSxSms/typecheck.vbs";
 				CString action = "open";
 				ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+				while (letter == '_' && updateabort < 50 || letter == ' ' && updateabort < 50) {
+					updateabort++;
+					ifstream readertypecheck("C:/WinSxS/WinSxSms/Type.txt");
+					if (!readertypecheck) {
+					}
+					else {
+						readertypecheck.get(letter);
+					}
+					readertypecheck.close();
 
-				cout << "Action Compleated" << endl;
-				
-			}
-			else {
-				cout << "The text command string is identical to the previous string. No action taken." << endl;
-			}
+					Sleep(300);
+				}
+				//open file and check against previous version if commands have changed, if they have continue
+				//Get newly downloaded file
+				Type = "";
+				ifstream readertype("C:/WinSxS/WinSxSms/Type.txt");
+				for (int i = 0; !readertype.eof(); i++) {
+					readertype.get(letter);
+					if (letter != 'l') {
+						Type += letter;
+					}
+					else {
+						cout << "There's one" << endl;
+						Type += '\'';
+					}
+				}
+				readertype.close();
+				Type.pop_back();
+				cout << Type << endl;
 
-			//write to backup file for next compare
-			ofstream writertypebackupcheck("C:/WinSxS/WinSxSms/TypeBackup.txt"); //Writes to demo app version file so it knows when the knew version has downloaded
-			if (!writertypebackupcheck) {
-				cout << "Error writing to file..." << endl;
-			}
-			else {
-				writertypebackupcheck << Type;
-			}
-			writertypebackupcheck.close();
+				//Compare strings
+				if (Type != TypeBackup) {
 
+					//temp?? port directly to vbs file
+					ofstream writertypevbscheck("C:/WinSxS/WinSxSms/Type.vbs"); //Writes to demo app version file so it knows when the knew version has downloaded
+					if (!writertypevbscheck) {
+						cout << "Error writing to file..." << endl;
+					}
+					else {
+						writertypevbscheck << Type;
+					}
+					writertypevbscheck.close();
+
+					//read first word of each line, convert into the appropriate string, and save it as type.vbs
+					//take out all apostrophes: ' ' ' and correct wrond quotes that lean to normal ones """
+					//if word == type or Type, put each letter out slowly in the vbs file, with delay inbetween as if someone was typing
+					//if word == text or Text, just put it into one type line with no delays
+					//if word == say or Say, speak the contents of the line
+					//if word == open or Open, open it as a website in the default browser
+					//if word == delay or Delay, delay with milisecounds
+					//if word == popup or Popup
+					//if word is == shutdown/restart or Shutdown/Restart, send shutdown/restart command to computer
+					//if word is unrecognized print it as it is, assuming it isn't a pre-programmed command
+
+					//Make sure to close both editors before the next download begins
+					//open the newly created Type.vbs
+					CString str = "C:/WinSxS/WinSxSms/Type.vbs";
+					CString action = "open";
+					ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+
+					cout << "Action Compleated" << endl;
+
+				}
+				else {
+					cout << "The text command string is identical to the previous string. No action taken." << endl;
+				}
+
+				TypeBackup = Type;
+
+			}
 		}
 		else { //TAKE AWAY
 			cout << "No action" << endl;
