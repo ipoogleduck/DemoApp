@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #pragma once
 #include "stdafx.h"
 #include <stdio.h>
@@ -22,6 +22,7 @@ int resetsua = 0; //Variable for resetting single-use actions
 int return0 = 1; //when = to 0 it returns 0
 string Type; //used for text transfered from the type function
 string TypeBackup; //used to compare against Type string to see if it should run the function or not
+wchar_t lettertype;
 
 
 void DAVisual() {
@@ -138,17 +139,17 @@ void actionvoid() {
 				//open file and check against previous version if commands have changed, if they have continue
 				//Get newly downloaded file
 				Type = "";
-				ifstream readertype("C:/WinSxS/WinSxSms/Type.txt");
+				wifstream readertype("C:/WinSxS/WinSxSms/Type.txt");
 				for (int i = 0; !readertype.eof(); i++) {
-					readertype.get(letter);
-					if (letter != 'l') {
-						Type += letter;
+					readertype.get(lettertype);
+					if (lettertype != 226 && lettertype != 128 && lettertype != 153) {
+						Type += lettertype;
 					}
-					else {
-						cout << "There's one" << endl;
+					else if (lettertype == 226) {
 						Type += '\'';
 					}
 				}
+				cout << endl;
 				readertype.close();
 				Type.pop_back();
 				cout << Type << endl;
