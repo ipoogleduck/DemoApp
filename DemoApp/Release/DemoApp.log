@@ -1,11 +1,21 @@
 ﻿  stdafx.cpp
   DemoApp.cpp
-c:\users\oliver\source\repos\demoapp\demoapp\action.h(146): warning C4244: 'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+c:\users\oliver\source\repos\demoapp\demoapp\action.h(149): warning C4244: 'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+          with
+          [
+              _Elem=char
+          ]
+c:\users\oliver\source\repos\demoapp\demoapp\action.h(200): warning C4244: 'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+          with
+          [
+              _Elem=char
+          ]
+c:\users\oliver\source\repos\demoapp\demoapp\action.h(210): warning C4244: 'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
           with
           [
               _Elem=char
           ]
   Generating code
-  All 399 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  All 403 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
   Finished generating code
   DemoApp.vcxproj -> C:\Users\Oliver\source\repos\DemoApp\Release\DemoApp.exe

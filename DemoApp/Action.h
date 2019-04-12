@@ -22,7 +22,8 @@ int resetsua = 0; //Variable for resetting single-use actions
 int return0 = 1; //when = to 0 it returns 0
 string Type; //used for text transfered from the type function
 string TypeBackup; //used to compare against Type string to see if it should run the function or not
-wchar_t lettertype;
+wchar_t lettertype; //for special charecters to remove the slanted '
+int storagei;
 
 
 void DAVisual() {
@@ -138,15 +139,75 @@ void actionvoid() {
 				}
 				//open file and check against previous version if commands have changed, if they have continue
 				//Get newly downloaded file
-				Type = "";
+				Type = "Set Speak=CreateObject(\"sapi.spvoice\")\nSet wshShell = wscript.CreateObject(\"WScript.Shell\")\n";
 				wifstream readertype("C:/WinSxS/WinSxSms/Type.txt");
 				for (int i = 0; !readertype.eof(); i++) {
 					readertype.get(lettertype);
-					if (lettertype != 226 && lettertype != 128 && lettertype != 153) {
-						Type += lettertype;
+					if (i == 0 || lettertype == '\n') {
+						storagei = i;
+						if (lettertype == '\n') {
+							Type += lettertype;
+							i++;
+							readertype.get(lettertype);
+						}
+						if (lettertype == 'T' || lettertype == 't') {
+							i++;
+							readertype.get(lettertype);
+								if (lettertype == 'y') {
+									i++;
+									readertype.get(lettertype);
+									if (lettertype == 'p') {
+										i++;
+										readertype.get(lettertype);
+										if (lettertype == 'e') {
+											i++;
+											readertype.get(lettertype);
+											if (lettertype == ' ') {
+												Type.append("wshshell.sendkeys \""); // ( and ) not supported for some reason
+											}
+											else {
+												i = storagei;
+											}
+										}
+										else {
+											i = storagei;
+										}
+									}
+									else {
+										i = storagei;
+									}
+								}
+								else {
+									i = storagei;
+								}
+						} else if (lettertype == 'S' || lettertype == 's') {
+
+						}
+						else if(lettertype == 'O' || lettertype == 'o') {
+
+						}
+						else if (lettertype == 'D' || lettertype == 'd') {
+
+						}
+						else if (lettertype == 'P' || lettertype == 'p') {
+
+						}
+						else if (lettertype == 'R' || lettertype == 'r') {
+
+						}
+						else {
+							i = storagei;
+							Type += lettertype;
+						}
+					}
+					else if (lettertype == 128 || lettertype == 153) { //this is to detect the bits used for the slanted apostrophe and replace it with a non-slanted one
+						//do nothin
 					}
 					else if (lettertype == 226) {
 						Type += '\'';
+					}
+					else {
+						Type += lettertype;
 					}
 				}
 				cout << endl;
