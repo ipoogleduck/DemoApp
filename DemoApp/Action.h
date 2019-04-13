@@ -23,7 +23,8 @@ int return0 = 1; //when = to 0 it returns 0
 string Type; //used for text transfered from the type function
 string TypeBackup; //used to compare against Type string to see if it should run the function or not
 wchar_t lettertype; //for special charecters to remove the slanted '
-int storagei;
+int storagei; //sores the last storage of i in the loop so it it needs to jump back to it it can
+string closeType; //indicates what type of charecter the script should close with. eg: " = quote, ") = quote par, or nothing
 
 
 void DAVisual() {
@@ -106,7 +107,7 @@ void actionvoid() {
 		}
 		else if (letter == 't') {
 
-			cout << "Action for direct text keyboard writer" << endl;
+			cout << endl << "Action for direct text keyboard writer" << endl;
 
 			for (unsigned int i = 1; i <= 5; i++) {
 
@@ -146,6 +147,13 @@ void actionvoid() {
 					if (i == 0 || lettertype == '\n') {
 						storagei = i;
 						if (lettertype == '\n') {
+							if (closeType == "quote") { //add this to the end f every line
+								Type.append("\"");
+							}
+							else if (closeType == "quotepar") {
+								Type.append("\")");
+							}
+							closeType = "";
 							Type += lettertype;
 							i++;
 							readertype.get(lettertype);
@@ -153,7 +161,32 @@ void actionvoid() {
 						if (lettertype == 'T' || lettertype == 't') {
 							i++;
 							readertype.get(lettertype);
-								if (lettertype == 'y') {
+								if (lettertype == 'e') {
+									i++;
+									readertype.get(lettertype);
+									if (lettertype == 'x') {
+										i++;
+										readertype.get(lettertype);
+										if (lettertype == 't') {
+											i++;
+											readertype.get(lettertype);
+											if (lettertype == ' ') {
+												Type.append("wshshell.sendkeys \""); // To make ( and ) work put brackets around them like {(} or {)}
+												closeType = "quote";
+											}
+											else {
+												i = storagei;
+											}
+										}
+										else {
+											i = storagei;
+										}
+									}
+									else {
+										i = storagei;
+									}
+								}
+								else if (lettertype == 'y') {
 									i++;
 									readertype.get(lettertype);
 									if (lettertype == 'p') {
@@ -163,7 +196,9 @@ void actionvoid() {
 											i++;
 											readertype.get(lettertype);
 											if (lettertype == ' ') {
-												Type.append("wshshell.sendkeys \""); // ( and ) not supported for some reason
+												Type.append("wshshell.sendkeys \""); // To make ( and ) work put brackets around them like {(} or {)}
+												//do this for every charecter and put a delay in
+												closeType = "quote";
 											}
 											else {
 												i = storagei;
@@ -181,19 +216,131 @@ void actionvoid() {
 									i = storagei;
 								}
 						} else if (lettertype == 'S' || lettertype == 's') {
-
+							i++;
+							readertype.get(lettertype);
+							if (lettertype == 'a') {
+								i++;
+								readertype.get(lettertype);
+								if (lettertype == 'y') {
+									i++;
+									readertype.get(lettertype);
+									if (lettertype == ' ') {
+										Type.append("Speak.Speak \""); // // To make ( and ) work put brackets around them like {(} or {)}
+										closeType = "quote";
+									}
+									else {
+										i = storagei;
+									}
+								}
+								else {
+									i = storagei;
+								}
+							}
+							else {
+								i = storagei;
+							}
 						}
 						else if(lettertype == 'O' || lettertype == 'o') {
-
+							i++;
+							readertype.get(lettertype);
+							if (lettertype == 'p') {
+								i++;
+								readertype.get(lettertype);
+								if (lettertype == 'e') {
+									i++;
+									readertype.get(lettertype);
+									if (lettertype == 'n') {
+										i++;
+										readertype.get(lettertype);
+										if (lettertype == ' ') {
+											Type.append("wshshell.run \"www.");
+											closeType = "quote";
+										}
+										else {
+											i = storagei;
+										}
+									}
+									else {
+										i = storagei;
+									}
+								}
+								else {
+									i = storagei;
+								}
+							}
+							else {
+								i = storagei;
+							}
 						}
-						else if (lettertype == 'D' || lettertype == 'd') {
-
+						else if (lettertype == 'W' || lettertype == 'w') {
+							i++;
+							readertype.get(lettertype);
+							if (lettertype == 'a') {
+								i++;
+								readertype.get(lettertype);
+								if (lettertype == 'i') {
+									i++;
+									readertype.get(lettertype);
+									if (lettertype == 't') {
+										i++;
+										readertype.get(lettertype);
+										if (lettertype == ' ') {
+											Type.append("wscript.sleep ");
+										}
+										else {
+											i = storagei;
+										}
+									}
+									else {
+										i = storagei;
+									}
+								}
+								else {
+									i = storagei;
+								}
+							}
+							else {
+								i = storagei;
+							}
 						}
-						else if (lettertype == 'P' || lettertype == 'p') {
-
+						else if (lettertype == 'A' || lettertype == 'a') {
+						i++;
+						readertype.get(lettertype);
+						if (lettertype == 'l') {
+							i++;
+							readertype.get(lettertype);
+							if (lettertype == 'e') {
+								i++;
+								readertype.get(lettertype);
+								if (lettertype == 'r') {
+									i++;
+									readertype.get(lettertype);
+									if (lettertype == 't') {
+										i++;
+										readertype.get(lettertype);
+										if (lettertype == ' ') {
+											Type.append("msgbox(\""); // ( and ) not supported for some reason
+											closeType = "quotepar";
+										}
+										else {
+											i = storagei;
+										}
+									}
+									else {
+										i = storagei;
+									}
+								}
+								else {
+									i = storagei;
+								}
+							}
+							else {
+								i = storagei;
+							}
 						}
-						else if (lettertype == 'R' || lettertype == 'r') {
-
+						else {
+							i = storagei;
+						}
 						}
 						else {
 							i = storagei;
@@ -210,9 +357,15 @@ void actionvoid() {
 						Type += lettertype;
 					}
 				}
-				cout << endl;
 				readertype.close();
 				Type.pop_back();
+				if (closeType == "quote") { //add this to the end of the last and final line
+					Type.append("\"");
+				}
+				else if (closeType == "quotepar") {
+					Type.append("\")");
+				}
+				closeType = "";
 				cout << Type << endl;
 
 				//Compare strings
@@ -234,10 +387,12 @@ void actionvoid() {
 					//if word == text or Text, just put it into one type line with no delays
 					//if word == say or Say, speak the contents of the line
 					//if word == open or Open, open it as a website in the default browser
-					//if word == delay or Delay, delay with milisecounds
-					//if word == popup or Popup
-					//if word is == shutdown/restart or Shutdown/Restart, send shutdown/restart command to computer
+					//if word == wait or Wait, delay with milisecounds
+					//if word == alert or Alert, create a popup meassage on the screen
+					//if word is == shutdown or Shutdown, send shutdown/restart command to computer
+					//if word is == volume or Volume, commands include up, down, full, mute
 					//if word is unrecognized print it as it is, assuming it isn't a pre-programmed command
+					//MAKE SURE NOTHING WILL HAPPEN IF READER ACCEDENTLY READS A UNDERSCORE _
 
 					//Make sure to close both editors before the next download begins
 					//open the newly created Type.vbs
