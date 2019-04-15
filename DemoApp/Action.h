@@ -28,6 +28,7 @@ string closeType; //indicates what type of charecter the script should close wit
 int repeat; //used for how many times to repeate functions eg. 4{tab} or 5{left}
 string repeatstring; //used for the actual storage of the repeated action eg {tab} or {left]
 string commandnotrue; //collects data on what the orriginal string was for typed commands incase it doesn't match up
+int emergencyn; //if == 1 it will not append the next letter at the end
 
 
 void DAVisual() {
@@ -86,7 +87,7 @@ void actionvoid() {
 			ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
 			ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
 			ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
-		}
+		} /*
 		else if (letter == 'r') {
 			cout << "Action for resetting single-use actions" << endl;
 			resetsua = 0;
@@ -104,7 +105,7 @@ void actionvoid() {
 			CString action = "open";
 			ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
 			resetsua = 1;
-		}
+		} */
 		else if (letter == '0') {
 			return0 = 0;
 		}
@@ -655,9 +656,10 @@ void actionvoid() {
 										cout << "At 3 letters" << endl;
 										string repeatConversion = to_string(repeat); //put the number into a string
 										Type.append(repeatConversion); //append string to Type
-										if (!readertype.eof()) {
+										if (!readertype.eof() && lettertype != '\n') {
 											Type += lettertype; //append unused last charenter to Type
 										}
+										emergencyn = 1;
 									}
 								}
 								else if (lettertype == '{') {
@@ -668,9 +670,6 @@ void actionvoid() {
 										i++;
 										readertype.get(lettertype);
 									}
-									cout << "end found for 2 digets" << endl;
-									cout << "Repeat string: " << repeatstring << endl;
-									cout << "Repeat: " << repeat << endl;
 									if (updateabort <= 13) {
 										repeatstring += lettertype;
 										if (repeatstring == "{Delete}" || repeatstring == "{delete}" || repeatstring == "{DELETE}") {
@@ -684,9 +683,10 @@ void actionvoid() {
 								else {
 									string repeatConversion = to_string(repeat); //put the number into a string
 									Type.append(repeatConversion); //append string to Type
-									if (!readertype.eof()) {
+									if (!readertype.eof() && lettertype != '\n') {
 										Type += lettertype; //append unused last charenter to Type
 									}
+									emergencyn = 1;
 								}
 							}
 							else if (lettertype == '{') {
@@ -697,9 +697,6 @@ void actionvoid() {
 									i++;
 									readertype.get(lettertype);
 								}
-								cout << "end found for one diget" << endl;
-								cout << "Repeat string: " << repeatstring << endl;
-								cout << "Repeat: " << repeat << endl;
 								if (updateabort <= 13) {
 									repeatstring += lettertype;
 									if (repeatstring == "{Delete}" || repeatstring == "{delete}" || repeatstring == "{DELETE}") {
@@ -713,15 +710,20 @@ void actionvoid() {
 							else {
 								string repeatConversion = to_string(repeat); //put the number into a string
 								Type.append(repeatConversion); //append string to Type
-								if (!readertype.eof()) {
+								if (!readertype.eof() && lettertype != '\n') {
 									Type += lettertype; //append unused last charenter to Type
 								}
+								emergencyn = 1;
 							}
 						}
 						else {
 							Type += lettertype;
 						}
-						readertype.get(lettertype);
+						if (lettertype == '\n' && emergencyn == 1) {
+							emergencyn = 0;
+						} else {
+							readertype.get(lettertype);
+						}
 					}
 					if (lettertype == 40 && closeType == "quote" || lettertype == 41 && closeType == "quote") {
 						Type.pop_back();
