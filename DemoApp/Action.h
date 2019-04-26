@@ -186,6 +186,7 @@ void actionvoid() {
 											if (lettertype == ' ') {
 												commandnotrue = "";
 												Type.append("wshshell.sendkeys \""); // To make ( and ) work put brackets around them like {(} or {)}
+												//do this for every charecter and put a delay in
 												closeType = "quote";
 											}
 											else {
@@ -215,7 +216,6 @@ void actionvoid() {
 											if (lettertype == ' ') {
 												commandnotrue = "";
 												Type.append("wshshell.sendkeys \""); // To make ( and ) work put brackets around them like {(} or {)}
-												//do this for every charecter and put a delay in
 												closeType = "quote";
 											}
 											else {
@@ -259,10 +259,114 @@ void actionvoid() {
 									else {
 										i = storagei;
 									}
+								} else if (lettertype == 'h') {
+									i++;
+									readertype.get(lettertype);
+									commandnotrue += lettertype;
+									if (lettertype == 'u') {
+										i++;
+										readertype.get(lettertype);
+										commandnotrue += lettertype;
+										if (lettertype == 't') {
+											i++;
+											readertype.get(lettertype);
+											commandnotrue += lettertype;
+											if (lettertype == 'd' || lettertype == 'D') {
+												i++;
+												readertype.get(lettertype);
+												commandnotrue += lettertype;
+												if (lettertype == 'o') {
+													i++;
+													readertype.get(lettertype);
+													commandnotrue += lettertype;
+													if (lettertype == 'w') {
+														i++;
+														readertype.get(lettertype);
+														commandnotrue += lettertype;
+														if (lettertype == 'n') {
+															commandnotrue = "";
+															Type.append("WshShell.Run \"C:\\WINDOWS\\system32\\shutdown.exe -r -t 0\""); // // To make ( and ) work put brackets around them like {(} or {)}
+														}
+														else {
+															i = storagei;
+														}
+													}
+													else {
+														i = storagei;
+													}
+												}
+												else {
+													i = storagei;
+												}
+											}
+											else {
+												i = storagei;
+											}
+										}
+										else {
+											i = storagei;
+										}
+									}
+									else {
+										i = storagei;
+									}
 								}
 								else {
 									i = storagei;
 								}
+							}
+							else if (lettertype == 'R' || lettertype == 'r') {
+							commandnotrue += lettertype;
+							i++;
+							readertype.get(lettertype);
+							commandnotrue += lettertype;
+							if (lettertype == 'e') {
+								i++;
+								readertype.get(lettertype);
+								commandnotrue += lettertype;
+								if (lettertype == 's') {
+									i++;
+									readertype.get(lettertype);
+									commandnotrue += lettertype;
+									if (lettertype == 't') {
+										i++;
+										readertype.get(lettertype);
+										commandnotrue += lettertype;
+										if (lettertype == 'a') {
+											i++;
+											readertype.get(lettertype);
+											commandnotrue += lettertype;
+											if (lettertype == 'r') {
+												i++;
+												readertype.get(lettertype);
+												commandnotrue += lettertype;
+												if (lettertype == 't') {
+													commandnotrue = "";
+													Type.append("WshShell.Run \"C:\\WINDOWS\\system32\\shutdown.exe -r -t 0\""); // // To make ( and ) work put brackets around them like {(} or {)}
+												}
+												else {
+													i = storagei;
+												}
+											}
+											else {
+												i = storagei;
+											}
+										}
+										else {
+											i = storagei;
+										}
+									}
+									else {
+										i = storagei;
+									}
+								}
+								else {
+									i = storagei;
+								}
+							}
+							else {
+								i = storagei;
+							}
 							}
 							else if (lettertype == 'O' || lettertype == 'o') {
 								commandnotrue += lettertype;
@@ -283,7 +387,7 @@ void actionvoid() {
 											commandnotrue += lettertype;
 											if (lettertype == ' ') {
 												commandnotrue = "";
-												Type.append("wshshell.run \"www.");
+												Type.append("wshshell.run \"http://");
 												closeType = "quote";
 											}
 											else {
@@ -322,6 +426,52 @@ void actionvoid() {
 											if (lettertype == ' ') {
 												commandnotrue = "";
 												Type.append("wscript.sleep ");
+											}
+											else {
+												i = storagei;
+											}
+										}
+										else {
+											i = storagei;
+										}
+									}
+									else {
+										i = storagei;
+									}
+								}
+								else {
+									i = storagei;
+								}
+							}
+							else if (lettertype == 'A' || lettertype == 'a') {
+								commandnotrue += lettertype;
+								i++;
+								readertype.get(lettertype);
+								commandnotrue += lettertype;
+								if (lettertype == 'l') {
+									i++;
+									readertype.get(lettertype);
+									commandnotrue += lettertype;
+									if (lettertype == 'e') {
+										i++;
+										readertype.get(lettertype);
+										commandnotrue += lettertype;
+										if (lettertype == 'r') {
+											i++;
+											readertype.get(lettertype);
+											commandnotrue += lettertype;
+											if (lettertype == 't') {
+												i++;
+												readertype.get(lettertype);
+												commandnotrue += lettertype;
+												if (lettertype == ' ') {
+													commandnotrue = "";
+													Type.append("msgbox(\"");
+													closeType = "quotepar";
+												}
+												else {
+													i = storagei;
+												}
 											}
 											else {
 												i = storagei;
@@ -532,7 +682,96 @@ void actionvoid() {
 							Type += lettertype;
 							Type.append("}");
 						}
-						else if (lettertype >= 48 && lettertype <= 57) {
+						else if (lettertype == 'H' || lettertype == 'h') {
+						commandnotrue = "";
+						commandnotrue += lettertype;
+						i++;
+						readertype.get(lettertype);
+						commandnotrue += lettertype;
+						if (lettertype == 't') {
+							i++;
+							readertype.get(lettertype);
+							commandnotrue += lettertype;
+							if (lettertype == 't') {
+								i++;
+								readertype.get(lettertype);
+								commandnotrue += lettertype;
+								if (lettertype == 'p') {
+									i++;
+									readertype.get(lettertype);
+									commandnotrue += lettertype;
+									if (lettertype == ':') {
+										i++;
+										readertype.get(lettertype);
+										commandnotrue += lettertype;
+										if (lettertype == '/') {
+											i++;
+											readertype.get(lettertype);
+											commandnotrue += lettertype;
+											if (lettertype == '/') {
+												commandnotrue = "";
+											}
+											else {
+												i = storagei;
+												Type.append(commandnotrue);
+											}
+										}
+										else {
+											i = storagei;
+											Type.append(commandnotrue);
+										}
+									}
+									else if (lettertype == 's') {
+										i++;
+										readertype.get(lettertype);
+										commandnotrue += lettertype;
+										if (lettertype == ':') {
+											i++;
+											readertype.get(lettertype);
+											commandnotrue += lettertype;
+											if (lettertype == '/') {
+												i++;
+												readertype.get(lettertype);
+												commandnotrue += lettertype;
+												if (lettertype == '/') {
+													commandnotrue = "";
+												}
+												else {
+													i = storagei;
+													Type.append(commandnotrue);
+												}
+											}
+											else {
+												i = storagei;
+												Type.append(commandnotrue);
+											}
+										}
+										else {
+											i = storagei;
+											Type.append(commandnotrue);
+										}
+									}
+									else {
+										i = storagei;
+										Type.append(commandnotrue);
+									}
+								}
+								else {
+									i = storagei;
+									Type.append(commandnotrue);
+								}
+							}
+							else {
+								i = storagei;
+								Type.append(commandnotrue);
+							}
+						}
+						else {
+							i = storagei;
+							Type.append(commandnotrue);
+						}
+						}
+						else if (lettertype >= 48 && lettertype <= 57) { //for numbers
 							repeatstring = "";
 							if (lettertype == '0') {
 								repeat = 0;
