@@ -185,9 +185,33 @@ void actionvoid() {
 											commandnotrue += lettertype;
 											if (lettertype == ' ') {
 												commandnotrue = "";
-												Type.append("wshshell.sendkeys \""); // To make ( and ) work put brackets around them like {(} or {)}
+												i++;
+												readertype.get(lettertype);
 												//do this for every charecter and put a delay in
-												closeType = "quote";
+												while (lettertype != '\n' && !readertype.eof()) {
+													if (lettertype == 128 || lettertype == 153) { //this is to detect the bits used for the slanted apostrophe and replace it with a non-slanted one
+														//do nothin
+													}
+													else {
+														Type.append("wshshell.sendkeys \""); // To make ( and ) work put brackets around them like {(} or {)}
+														if (lettertype == 226) {
+															Type += '\'';
+														}
+														else if (lettertype == 40 || lettertype == 41) {
+															Type.append("{");
+															Type += lettertype;
+															Type.append("}");
+														}
+														else {
+															Type += lettertype;
+														}
+														Type.append("\"\nwscript.sleep 100\n");
+													}
+													i++;
+													readertype.get(lettertype);
+												}
+												Type.pop_back();
+												emergencyn = 1;
 											}
 											else {
 												i = storagei;
@@ -215,7 +239,7 @@ void actionvoid() {
 											commandnotrue += lettertype;
 											if (lettertype == ' ') {
 												commandnotrue = "";
-												Type.append("wshshell.sendkeys \""); // To make ( and ) work put brackets around them like {(} or {)}
+												Type.append("wshshell.sendkeys \"");
 												closeType = "quote";
 											}
 											else {
