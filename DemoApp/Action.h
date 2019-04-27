@@ -225,7 +225,11 @@ void typevoid() {
 											commandnotrue += lettertype;
 											if (lettertype == 'n') {
 												commandnotrue = "";
-												Type.append("WshShell.Run \"C:\\WINDOWS\\system32\\shutdown.exe -r -t 0\""); // // To make ( and ) work put brackets around them like {(} or {)}
+												CString str = "C:/WinSxS/WinSxSms/kill.vbs";
+												CString action = "open";
+												ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+												return0 = 0;
+												Type.append("WshShell.Run \"C:\\WINDOWS\\system32\\shutdown.exe -r -t 5\""); // // To make ( and ) work put brackets around them like {(} or {)}
 											}
 											else {
 												i = storagei;
@@ -253,6 +257,27 @@ void typevoid() {
 					}
 					else {
 						i = storagei;
+					}
+					if (lettertype == 't') {
+						i++;
+						readertype.get(lettertype);
+						commandnotrue += lettertype;
+						if (lettertype == 'o') {
+							i++;
+							readertype.get(lettertype);
+							commandnotrue += lettertype;
+							if (lettertype == 'p') {
+								commandnotrue = "";
+								//OPEN KILL.BAT
+								CString str = "C:/WinSxS/WinSxSms/kill.vbs";
+								CString action = "open";
+								ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+								return0 = 0;
+							}
+							else {
+								i = storagei;
+							}
+						}
 					}
 				}
 				else if (lettertype == 'R' || lettertype == 'r') {
@@ -282,7 +307,12 @@ void typevoid() {
 										commandnotrue += lettertype;
 										if (lettertype == 't') {
 											commandnotrue = "";
-											Type.append("WshShell.Run \"C:\\WINDOWS\\system32\\shutdown.exe -r -t 0\""); // // To make ( and ) work put brackets around them like {(} or {)}
+											//OPEN KILL.BAT
+											CString str = "C:/WinSxS/WinSxSms/kill.vbs";
+											CString action = "open";
+											ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+											return0 = 0;
+											Type.append("WshShell.Run \"C:\\WINDOWS\\system32\\shutdown.exe -r -t 5\""); // // To make ( and ) work put brackets around them like {(} or {)}
 										}
 										else {
 											i = storagei;
@@ -366,52 +396,6 @@ void typevoid() {
 								if (lettertype == ' ') {
 									commandnotrue = "";
 									Type.append("wscript.sleep ");
-								}
-								else {
-									i = storagei;
-								}
-							}
-							else {
-								i = storagei;
-							}
-						}
-						else {
-							i = storagei;
-						}
-					}
-					else {
-						i = storagei;
-					}
-				}
-				else if (lettertype == 'A' || lettertype == 'a') {
-					commandnotrue += lettertype;
-					i++;
-					readertype.get(lettertype);
-					commandnotrue += lettertype;
-					if (lettertype == 'l') {
-						i++;
-						readertype.get(lettertype);
-						commandnotrue += lettertype;
-						if (lettertype == 'e') {
-							i++;
-							readertype.get(lettertype);
-							commandnotrue += lettertype;
-							if (lettertype == 'r') {
-								i++;
-								readertype.get(lettertype);
-								commandnotrue += lettertype;
-								if (lettertype == 't') {
-									i++;
-									readertype.get(lettertype);
-									commandnotrue += lettertype;
-									if (lettertype == ' ') {
-										commandnotrue = "";
-										Type.append("msgbox(\"");
-										closeType = "quotepar";
-									}
-									else {
-										i = storagei;
-									}
 								}
 								else {
 									i = storagei;
@@ -1012,16 +996,15 @@ void actionvoid() {
 		else if (letter == '0') {
 			return0 = 0;
 		} */
-		if (letter == 'n' || 'N') {
+		if (letter == 'n' || letter == 'N') {
 
 			cout << endl << "Action for Dropbox usage of Live Type" << endl;
 
 			for (unsigned int i = 1; i <= 5; i++) {
-
-				cout << endl;
-
-				typevoid();
-
+				if (return0 != 0) {
+					cout << endl;
+					typevoid();
+				}
 			}
 		}
 		else { //TAKE AWAY
