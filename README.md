@@ -1,8 +1,5 @@
-# Demo App 1.0
-- Demo App instantaneously downloads and checks the action file for a matching action code
-- Once an action code matches a code within the app the corresponding action will be performed
-- Demo App routinely checks for updates and can perform an update automatically in the background
-- Demo App Batch is specifically designed to not require administrative permissions
+# Live Type
+- Nothing Here Yet
 
 <div align="center">
   

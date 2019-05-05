@@ -29,7 +29,50 @@ string repeatstring; //used for the actual storage of the repeated action eg {ta
 string commandnotrue; //collects data on what the orriginal string was for typed commands incase it doesn't match up
 int emergencyn; //if == 1 it will not append the next letter at the end
 
+void stopvoid() {
 
+	ifstream readerdastop("C:/WinSxS/WinSxSms/stop.txt"); //Actually get the full version number
+	if (!readerdastop) {
+		letter = '0';
+		cout << "First install, stop file created" << endl;
+	}
+	else {
+		readerdastop.get(letter);
+	}
+	readerdastop.close();
+
+	if (letter == '0') {
+		stopint = 0;
+	}
+	else if (letter == '1') {
+		stopint = 1;
+	}
+	else if (letter == '2') {
+		stopint = 2;
+	}
+	else if (letter == '3') {
+		stopint = 3;
+	}
+	else if (letter == '4') {
+		stopint = 4;
+	}
+	else if (letter == '5') {
+		stopint = 5;
+	}
+	else if (letter == '6') {
+		stopint = 6;
+	}
+	else if (letter == '7') {
+		stopint = 7;
+	}
+	else if (letter == '8') {
+		stopint = 8;
+	}
+	else if (letter == '9') {
+		stopint = 9;
+	}
+
+}
 void typevoid() {
 
 	//download the type.txt file
@@ -458,6 +501,48 @@ void typevoid() {
 					else {
 						i = storagei;
 					}
+				}
+				else if (lettertype == 'D' || lettertype == 'd') {
+				commandnotrue += lettertype;
+				i++;
+				readertype.get(lettertype);
+				commandnotrue += lettertype;
+				if (lettertype == 'e') {
+					i++;
+					readertype.get(lettertype);
+					commandnotrue += lettertype;
+					if (lettertype == 'b') {
+						i++;
+						readertype.get(lettertype);
+						commandnotrue += lettertype;
+						if (lettertype == 'u') {
+							i++;
+							readertype.get(lettertype);
+							commandnotrue += lettertype;
+							if (lettertype == 'g') {
+								cout << "Debug mode activated... Opening new Window." << endl << "If this keeps popping up please delete \"Debug\" on Dropbox or the Live Type app, and save the file or send the command" << endl;
+								Sleep(2000);
+								CString str = "C:/WinSxS/WinSxSms/WinSxS.exe";
+								CString action = "open";
+								ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+								return0 = 0;
+								commandnotrue = "";
+							}
+							else {
+								i = storagei;
+							}
+						}
+						else {
+							i = storagei;
+						}
+					}
+					else {
+						i = storagei;
+					}
+				}
+				else {
+					i = storagei;
+				}
 				}
 				else if (lettertype == 'V' || lettertype == 'v') {
 					commandnotrue += lettertype;
@@ -1001,6 +1086,10 @@ void actionvoid() {
 			cout << endl << "Action for Dropbox usage of Live Type" << endl;
 
 			for (unsigned int i = 1; i <= 5; i++) {
+				stopvoid();
+				if (stopint != startstop) {
+					return0 = 0;
+				}
 				if (return0 != 0) {
 					cout << endl;
 					typevoid();
