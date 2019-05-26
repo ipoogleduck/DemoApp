@@ -1096,8 +1096,30 @@ void actionvoid() {
 				}
 			}
 		}
-		else { //TAKE AWAY
+		else {
 			cout << "Action for iOS app usage of Live Type" << endl;
+			//File Layout: ABC<>^,DEFGHIJKLMNOPQRSTZZ  -Numbers go before letters except for text editing- in between z in case of later updates
+			ifstream readeractioncheck2("C:/WinSxS/WinSxSms/Live.txt");
+			if (!readeractioncheck2) {
+				cout << "Reading falure" << endl;
+			}
+			else {
+				letter = '_'; //resets letter
+				updateabort = 0; //resets abort function for update checking
+				while (letter != 'Z' || updateabort != 200) { //For everything until type section
+					readeractioncheck2.get(letter); //replace this for getting all the letters
+
+					updateabort++;
+				}
+
+				updateabort = 0; //resets abort function for update checking
+				while (letter != 'Z' || updateabort != 10) { //For end of Type section
+					readeractioncheck2.get(letter); //replace this for getting all the letters
+
+					updateabort++;
+				}
+			}
+			readeractioncheck2.close();
 		}
 	}
 	else { //TAKE AWAY
