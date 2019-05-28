@@ -29,6 +29,35 @@ string repeatstring; //used for the actual storage of the repeated action eg {ta
 string commandnotrue; //collects data on what the orriginal string was for typed commands incase it doesn't match up
 int emergencyn; //if == 1 it will not append the next letter at the end
 
+int A = 0; //These are all saving variables for live file
+int B = 0;
+int C = 0;
+int Left = 0;
+int Right = 0;
+int Up = 0;
+int Down = 0;
+int D = 0;
+int E = 0;
+int F = 0;
+int G = 0;
+int H = 0;
+int I = 0;
+int J = 0;
+int K = 0;
+int L = 0;
+int M = 0;
+int N = 0;
+int O = 0;
+int P = 0;
+int Q = 0;
+int R = 0;
+int S = 0;
+int T = 0;
+int Z = 0;
+
+int tempint; //for comparing to ints above
+
+
 void stopvoid() {
 
 	ifstream readerdastop("C:/WinSxS/WinSxSms/stop.txt"); //Actually get the full version number
@@ -1034,6 +1063,13 @@ void typevoid() {
 
 }
 
+void charcreate() {
+
+	tempint = 0;
+
+
+}
+
 
 void actionvoid() {
 	ofstream writeractioncheck("C:/WinSxS/WinSxSms/Live.txt"); //Writes to demo app version file so it knows when the knew version has downloaded
@@ -1105,18 +1141,20 @@ void actionvoid() {
 			}
 			else {
 				letter = '_'; //resets letter
-				updateabort = 0; //resets abort function for update checking
-				while (letter != 'Z' || updateabort != 200) { //For everything until type section
-					readeractioncheck2.get(letter); //replace this for getting all the letters
-
-					updateabort++;
+				readeractioncheck2.get(letter); //replace this for getting all the letters
+				charcreate;
+				//Compare tempint to A and do math
+				if (tempint > A) {
+					tempint = tempint - A;
+					cout << "Tab Command times " << tempint;
 				}
-
-				updateabort = 0; //resets abort function for update checking
-				while (letter != 'Z' || updateabort != 10) { //For end of Type section
-					readeractioncheck2.get(letter); //replace this for getting all the letters
-
-					updateabort++;
+				else if (tempint < A) {
+					cout << "Reseted Tab Command times " << tempint;
+				}
+				for (unsigned int i = 0; i <= tempint; i++) {
+					CString str = "C:/WinSxS/WinSxSms/Tab.vbs"; //Opens file in backround to check if new update is available
+					CString action = "open";
+					ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
 				}
 			}
 			readeractioncheck2.close();
