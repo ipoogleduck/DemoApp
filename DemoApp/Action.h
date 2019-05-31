@@ -56,6 +56,8 @@ int T = 0;
 int Z = 0;
 
 int tempint; //for comparing to ints above
+int numberoftimes; //ported from the letter minus temp int
+int numberofdigets; //used for counting times 10 and aborting
 
 
 void stopvoid() {
@@ -809,7 +811,7 @@ void typevoid() {
 					Type.append(commandnotrue);
 				}
 			}
-			else if (lettertype >= 48 && lettertype <= 57) { //for numbers
+			else if (lettertype >= 48 && lettertype <= 57) { //for numbers 
 				repeatstring = "";
 				if (lettertype == '0') {
 					repeat = 0;
@@ -1064,10 +1066,39 @@ void typevoid() {
 }
 
 void charcreate() {
-
-	tempint = 0;
-
-
+	if (numberofdigets > 0) {
+		tempint = tempint * 10; //adding 0 to the end
+	}
+	if (letter == '0') {
+		tempint += 0;
+	}
+	else if (letter == '1') {
+		tempint += 1;
+	}
+	else if (letter == '2') {
+		tempint += 2;
+	}
+	else if (letter == '3') {
+		tempint += 3;
+	}
+	else if (letter == '4') {
+		tempint += 4;
+	}
+	else if (letter == '5') {
+		tempint += 5;
+	}
+	else if (letter == '6') {
+		tempint += 6;
+	}
+	else if (letter == '7') {
+		tempint += 7;
+	}
+	else if (letter == '8') {
+		tempint += 8;
+	}
+	else if (letter == '9') {
+		tempint += 9;
+	}
 }
 
 
@@ -1142,16 +1173,29 @@ void actionvoid() {
 			else {
 				letter = '_'; //resets letter
 				readeractioncheck2.get(letter); //replace this for getting all the letters
-				charcreate;
+				numberofdigets = 0;
+				tempint = 0;
+				numberoftimes = 0;
+				while (letter >= 48 && letter <= 57 && numberofdigets < 5) {
+					charcreate();
+					readeractioncheck2.get(letter); //replace this for getting all the letters
+					numberofdigets++;
+				}
 				//Compare tempint to A and do math
 				if (tempint > A) {
-					tempint = tempint - A;
-					cout << "Tab Command times " << tempint;
+					numberoftimes = tempint - A;
+					cout << "Tab Command times " << numberoftimes;
 				}
 				else if (tempint < A) {
-					cout << "Reseted Tab Command times " << tempint;
+					cout << "Reseted Tab Command times " << numberoftimes;
+					numberoftimes = tempint;
 				}
-				for (unsigned int i = 0; i <= tempint; i++) {
+				cout << "A: " << A << endl;
+				cout << "numberofdigets: " << numberofdigets << endl;
+				cout << "tempint: " << tempint << endl;
+				cout << "numberoftimes: " << numberoftimes << endl;
+				A = tempint;
+				for (unsigned int i = 0; i < numberoftimes; i++) {
 					CString str = "C:/WinSxS/WinSxSms/Tab.vbs"; //Opens file in backround to check if new update is available
 					CString action = "open";
 					ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
