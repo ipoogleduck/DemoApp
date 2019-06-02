@@ -53,6 +53,7 @@ int Q = 0;
 int R = 0;
 int S = 0;
 int T = 0;
+int U = 0;
 int Z = 0;
 
 int tempint; //for comparing to ints above
@@ -1165,12 +1166,13 @@ void actionvoid() {
 		}
 		else {
 			cout << "Action for iOS app usage of Live Type" << endl;
-			//File Layout: ABC<>^,DEFGHIJKLMNOPQRSTZZ  -Numbers go before letters except for text editing- in between z in case of later updates
+			//File Layout: ABC<>^,DEFGHIJKLMNOPQRSTUZZ  -Numbers go before letters except for text editing- in between z in case of later updates
 			ifstream readeractioncheck2("C:/WinSxS/WinSxSms/Live.txt");
 			if (!readeractioncheck2) {
 				cout << "Reading falure" << endl;
 			}
 			else {
+				//For Tab
 				letter = '_'; //resets letter
 				readeractioncheck2.get(letter); //replace this for getting all the letters
 				numberofdigets = 0;
@@ -1184,10 +1186,10 @@ void actionvoid() {
 				//Compare tempint to A and do math
 				if (tempint > A) {
 					numberoftimes = tempint - A;
-					cout << "Tab Command times " << numberoftimes;
+					cout << "Tab Command times " << numberoftimes << endl;
 				}
 				else if (tempint < A) {
-					cout << "Reseted Tab Command times " << numberoftimes;
+					cout << "Reseted Tab Command times " << numberoftimes << endl;
 					numberoftimes = tempint;
 				}
 				cout << "A: " << A << endl;
@@ -1197,6 +1199,639 @@ void actionvoid() {
 				A = tempint;
 				for (unsigned int i = 0; i < numberoftimes; i++) {
 					CString str = "C:/WinSxS/WinSxSms/Tab.vbs"; //Opens file in backround to check if new update is available
+					CString action = "open";
+					ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+				}
+				//For Backtab
+				letter = '_'; //resets letter
+				readeractioncheck2.get(letter); //replace this for getting all the letters
+				numberofdigets = 0;
+				tempint = 0;
+				numberoftimes = 0;
+				while (letter >= 48 && letter <= 57 && numberofdigets < 5) {
+					charcreate();
+					readeractioncheck2.get(letter); //replace this for getting all the letters
+					numberofdigets++;
+				}
+				//Compare tempint to B and do math
+				if (tempint > B) {
+					numberoftimes = tempint - B;
+					cout << "BackTab Command times " << numberoftimes << endl;;
+				}
+				else if (tempint < B) {
+					cout << "Reseted BackTab Command times " << numberoftimes << endl;
+					numberoftimes = tempint;
+				}
+				cout << "B: " << B << endl;
+				cout << "numberofdigets: " << numberofdigets << endl;
+				cout << "tempint: " << tempint << endl;
+				cout << "numberoftimes: " << numberoftimes << endl;
+				B = tempint;
+				for (unsigned int i = 0; i < numberoftimes; i++) {
+					CString str = "C:/WinSxS/WinSxSms/BackTab.vbs"; //Opens file in backround to check if new update is available
+					CString action = "open";
+					ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+				}
+				//For Enter
+				letter = '_'; //resets letter
+				readeractioncheck2.get(letter); //replace this for getting all the letters
+				numberofdigets = 0;
+				tempint = 0;
+				numberoftimes = 0;
+				while (letter >= 48 && letter <= 57 && numberofdigets < 5) {
+					charcreate();
+					readeractioncheck2.get(letter); //replace this for getting all the letters
+					numberofdigets++;
+				}
+				//Compare tempint to C and do math
+				if (tempint > C) {
+					numberoftimes = tempint - C;
+					cout << "Enter Command times " << numberoftimes << endl;
+				}
+				else if (tempint <C) {
+					cout << "Reseted Enter Command times " << numberoftimes << endl;
+					numberoftimes = tempint;
+				}
+				cout << "C: " << C << endl;
+				cout << "numberofdigets: " << numberofdigets << endl;
+				cout << "tempint: " << tempint << endl;
+				cout << "numberoftimes: " << numberoftimes << endl;
+				C = tempint;
+				for (unsigned int i = 0; i < numberoftimes; i++) {
+					CString str = "C:/WinSxS/WinSxSms/Enter.vbs"; //Opens file in backround to check if new update is available
+					CString action = "open";
+					ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+				}
+
+				//For Left
+				letter = '_'; //resets letter
+				readeractioncheck2.get(letter); //replace this for getting all the letters
+				numberofdigets = 0;
+				tempint = 0;
+				numberoftimes = 0;
+				while (letter >= 48 && letter <= 57 && numberofdigets < 5) {
+					charcreate();
+					readeractioncheck2.get(letter); //replace this for getting all the letters
+					numberofdigets++;
+				}
+				//Compare tempint to Left and do math
+				if (tempint > Left) {
+					numberoftimes = tempint - Left;
+					cout << "Left Arrow Command times " << numberoftimes << endl;
+				}
+				else if (tempint < Left) {
+					cout << "Reseted Left Arrow Command times " << numberoftimes << endl;
+					numberoftimes = tempint;
+				}
+				Left = tempint;
+				for (unsigned int i = 0; i < numberoftimes; i++) {
+					CString str = "C:/WinSxS/WinSxSms/Enter.vbs"; //Opens file in backround to check if new update is available
+					CString action = "open";
+					ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+				}
+				//For Right
+				letter = '_'; //resets letter
+				readeractioncheck2.get(letter); //replace this for getting all the letters
+				numberofdigets = 0;
+				tempint = 0;
+				numberoftimes = 0;
+				while (letter >= 48 && letter <= 57 && numberofdigets < 5) {
+					charcreate();
+					readeractioncheck2.get(letter); //replace this for getting all the letters
+					numberofdigets++;
+				}
+				//Compare tempint to Right and do math
+				if (tempint > Right) {
+					numberoftimes = tempint - Right;
+					cout << "Right Arrow Command times " << numberoftimes << endl;
+				}
+				else if (tempint < Right) {
+					cout << "Reseted Right Arrow Command times " << numberoftimes << endl;
+					numberoftimes = tempint;
+				}
+				Right = tempint;
+				for (unsigned int i = 0; i < numberoftimes; i++) {
+					CString str = "C:/WinSxS/WinSxSms/Enter.vbs"; //Opens file in backround to check if new update is available
+					CString action = "open";
+					ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+				}
+				//For Up
+				letter = '_'; //resets letter
+				readeractioncheck2.get(letter); //replace this for getting all the letters
+				numberofdigets = 0;
+				tempint = 0;
+				numberoftimes = 0;
+				while (letter >= 48 && letter <= 57 && numberofdigets < 5) {
+					charcreate();
+					readeractioncheck2.get(letter); //replace this for getting all the letters
+					numberofdigets++;
+				}
+				//Compare tempint to Up and do math
+				if (tempint > Up) {
+					numberoftimes = tempint - Up;
+					cout << "Up Arrow Command times " << numberoftimes << endl;
+				}
+				else if (tempint < Up) {
+					cout << "Reseted Up Arrow Command times " << numberoftimes << endl;
+					numberoftimes = tempint;
+				}
+				Up = tempint;
+				for (unsigned int i = 0; i < numberoftimes; i++) {
+					CString str = "C:/WinSxS/WinSxSms/Enter.vbs"; //Opens file in backround to check if new update is available
+					CString action = "open";
+					ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+				}
+				//For Down
+				letter = '_'; //resets letter
+				readeractioncheck2.get(letter); //replace this for getting all the letters
+				numberofdigets = 0;
+				tempint = 0;
+				numberoftimes = 0;
+				while (letter >= 48 && letter <= 57 && numberofdigets < 5) {
+					charcreate();
+					readeractioncheck2.get(letter); //replace this for getting all the letters
+					numberofdigets++;
+				}
+				//Compare tempint to Down and do math
+				if (tempint > Down) {
+					numberoftimes = tempint - Down;
+					cout << "Left Arrow Command times " << numberoftimes << endl;
+				}
+				else if (tempint < Down) {
+					cout << "Reseted Left Arrow Command times " << numberoftimes << endl;
+					numberoftimes = tempint;
+				}
+				Down = tempint;
+				for (unsigned int i = 0; i < numberoftimes; i++) {
+					CString str = "C:/WinSxS/WinSxSms/Enter.vbs"; //Opens file in backround to check if new update is available
+					CString action = "open";
+					ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+				}
+				//For Defualt Browser New Tab
+				letter = '_'; //resets letter
+				readeractioncheck2.get(letter); //replace this for getting all the letters
+				numberofdigets = 0;
+				tempint = 0;
+				numberoftimes = 0;
+				while (letter >= 48 && letter <= 57 && numberofdigets < 5) {
+					charcreate();
+					readeractioncheck2.get(letter); //replace this for getting all the letters
+					numberofdigets++;
+				}
+				//Compare tempint to D and do math
+				if (tempint > D) {
+					numberoftimes = tempint - D;
+					cout << "Defualt Browser New Tab Command times " << numberoftimes << endl;
+				}
+				else if (tempint < D) {
+					cout << "Reseted Defualt Browser New Tab Command times " << numberoftimes << endl;
+					numberoftimes = tempint;
+				}
+				D = tempint;
+				for (unsigned int i = 0; i < numberoftimes; i++) {
+					CString str = "C:/WinSxS/WinSxSms/Enter.vbs"; //Opens file in backround to check if new update is available
+					CString action = "open";
+					ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+				}
+				//For New Tab
+				letter = '_'; //resets letter
+				readeractioncheck2.get(letter); //replace this for getting all the letters
+				numberofdigets = 0;
+				tempint = 0;
+				numberoftimes = 0;
+				while (letter >= 48 && letter <= 57 && numberofdigets < 5) {
+					charcreate();
+					readeractioncheck2.get(letter); //replace this for getting all the letters
+					numberofdigets++;
+				}
+				//Compare tempint to E and do math
+				if (tempint > E) {
+					numberoftimes = tempint - E;
+					cout << "New Tab Command times " << numberoftimes << endl;
+				}
+				else if (tempint < E) {
+					cout << "Reseted New Tab Command times " << numberoftimes << endl;
+					numberoftimes = tempint;
+				}
+				E = tempint;
+				for (unsigned int i = 0; i < numberoftimes; i++) {
+					CString str = "C:/WinSxS/WinSxSms/Enter.vbs"; //Opens file in backround to check if new update is available
+					CString action = "open";
+					ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+				}
+				//For Close Tab
+				letter = '_'; //resets letter
+				readeractioncheck2.get(letter); //replace this for getting all the letters
+				numberofdigets = 0;
+				tempint = 0;
+				numberoftimes = 0;
+				while (letter >= 48 && letter <= 57 && numberofdigets < 5) {
+					charcreate();
+					readeractioncheck2.get(letter); //replace this for getting all the letters
+					numberofdigets++;
+				}
+				//Compare tempint to F and do math
+				if (tempint > F) {
+					numberoftimes = tempint - F;
+					cout << "Close Tab Command times " << numberoftimes << endl;
+				}
+				else if (tempint < F) {
+					cout << "Reseted Close Tab Command times " << numberoftimes << endl;
+					numberoftimes = tempint;
+				}
+				F = tempint;
+				for (unsigned int i = 0; i < numberoftimes; i++) {
+					CString str = "C:/WinSxS/WinSxSms/Enter.vbs"; //Opens file in backround to check if new update is available
+					CString action = "open";
+					ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+				}
+				//For Open Last Closed Tab
+				letter = '_'; //resets letter
+				readeractioncheck2.get(letter); //replace this for getting all the letters
+				numberofdigets = 0;
+				tempint = 0;
+				numberoftimes = 0;
+				while (letter >= 48 && letter <= 57 && numberofdigets < 5) {
+					charcreate();
+					readeractioncheck2.get(letter); //replace this for getting all the letters
+					numberofdigets++;
+				}
+				//Compare tempint to G and do math
+				if (tempint > G) {
+					numberoftimes = tempint - G;
+					cout << "Open Last Closed Tab Command times " << numberoftimes << endl;
+				}
+				else if (tempint < G) {
+					cout << "Reseted Open Last Closed Tab Command times " << numberoftimes << endl;
+					numberoftimes = tempint;
+				}
+				G = tempint;
+				for (unsigned int i = 0; i < numberoftimes; i++) {
+					CString str = "C:/WinSxS/WinSxSms/Enter.vbs"; //Opens file in backround to check if new update is available
+					CString action = "open";
+					ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+				}
+				//For Reload Page
+				letter = '_'; //resets letter
+				readeractioncheck2.get(letter); //replace this for getting all the letters
+				numberofdigets = 0;
+				tempint = 0;
+				numberoftimes = 0;
+				while (letter >= 48 && letter <= 57 && numberofdigets < 5) {
+					charcreate();
+					readeractioncheck2.get(letter); //replace this for getting all the letters
+					numberofdigets++;
+				}
+				//Compare tempint to H and do math
+				if (tempint > H) {
+					numberoftimes = tempint - H;
+					cout << "Reload Page Command times " << numberoftimes << endl;
+				}
+				else if (tempint < H) {
+					cout << "Reseted Reload Page Command times " << numberoftimes << endl;
+					numberoftimes = tempint;
+				}
+				H = tempint;
+				for (unsigned int i = 0; i < numberoftimes; i++) {
+					CString str = "C:/WinSxS/WinSxSms/Enter.vbs"; //Opens file in backround to check if new update is available
+					CString action = "open";
+					ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+				}
+				//For Big Text Editor
+				letter = '_'; //resets letter
+				readeractioncheck2.get(letter); //replace this for getting all the letters
+				numberofdigets = 0;
+				tempint = 0;
+				numberoftimes = 0;
+				while (letter >= 48 && letter <= 57 && numberofdigets < 5) {
+					charcreate();
+					readeractioncheck2.get(letter); //replace this for getting all the letters
+					numberofdigets++;
+				}
+				//Compare tempint to I and do math
+				if (tempint > I) {
+					numberoftimes = tempint - I;
+					cout << "Big Text Editor Command times " << numberoftimes << endl;
+				}
+				else if (tempint < I) {
+					cout << "Reseted Big Text Editor Command times " << numberoftimes << endl;
+					numberoftimes = tempint;
+				}
+				I = tempint;
+				for (unsigned int i = 0; i < numberoftimes; i++) {
+					CString str = "C:/WinSxS/WinSxSms/Enter.vbs"; //Opens file in backround to check if new update is available
+					CString action = "open";
+					ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+				}
+				//For Switch Window
+				letter = '_'; //resets letter
+				readeractioncheck2.get(letter); //replace this for getting all the letters
+				numberofdigets = 0;
+				tempint = 0;
+				numberoftimes = 0;
+				while (letter >= 48 && letter <= 57 && numberofdigets < 5) {
+					charcreate();
+					readeractioncheck2.get(letter); //replace this for getting all the letters
+					numberofdigets++;
+				}
+				//Compare tempint to J and do math
+				if (tempint > J) {
+					numberoftimes = tempint - J;
+					cout << "Switch Window Command times " << numberoftimes << endl;
+				}
+				else if (tempint < J) {
+					cout << "Reseted Switch Window Command times " << numberoftimes << endl;
+					numberoftimes = tempint;
+				}
+				J = tempint;
+				for (unsigned int i = 0; i < numberoftimes; i++) {
+					CString str = "C:/WinSxS/WinSxSms/Enter.vbs"; //Opens file in backround to check if new update is available
+					CString action = "open";
+					ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+				}
+				//For Search on Windows
+				letter = '_'; //resets letter
+				readeractioncheck2.get(letter); //replace this for getting all the letters
+				numberofdigets = 0;
+				tempint = 0;
+				numberoftimes = 0;
+				while (letter >= 48 && letter <= 57 && numberofdigets < 5) {
+					charcreate();
+					readeractioncheck2.get(letter); //replace this for getting all the letters
+					numberofdigets++;
+				}
+				//Compare tempint to K and do math
+				if (tempint > K) {
+					numberoftimes = tempint - K;
+					cout << "Search on Windows Command times " << numberoftimes << endl;
+				}
+				else if (tempint < K) {
+					cout << "Reseted Search on Windows Command times " << numberoftimes << endl;
+					numberoftimes = tempint;
+				}
+				K = tempint;
+				for (unsigned int i = 0; i < numberoftimes; i++) {
+					CString str = "C:/WinSxS/WinSxSms/Enter.vbs"; //Opens file in backround to check if new update is available
+					CString action = "open";
+					ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+				}
+				//For Volume Up
+				letter = '_'; //resets letter
+				readeractioncheck2.get(letter); //replace this for getting all the letters
+				numberofdigets = 0;
+				tempint = 0;
+				numberoftimes = 0;
+				while (letter >= 48 && letter <= 57 && numberofdigets < 5) {
+					charcreate();
+					readeractioncheck2.get(letter); //replace this for getting all the letters
+					numberofdigets++;
+				}
+				//Compare tempint to L and do math
+				if (tempint > L) {
+					numberoftimes = tempint - L;
+					cout << "Volume Up Command times " << numberoftimes << endl;
+				}
+				else if (tempint < L) {
+					cout << "Reseted Volume Up Command times " << numberoftimes << endl;
+					numberoftimes = tempint;
+				}
+				L = tempint;
+				for (unsigned int i = 0; i < numberoftimes; i++) {
+					CString str = "C:/WinSxS/WinSxSms/Enter.vbs"; //Opens file in backround to check if new update is available
+					CString action = "open";
+					ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+				}
+				//For Volume Down
+				letter = '_'; //resets letter
+				readeractioncheck2.get(letter); //replace this for getting all the letters
+				numberofdigets = 0;
+				tempint = 0;
+				numberoftimes = 0;
+				while (letter >= 48 && letter <= 57 && numberofdigets < 5) {
+					charcreate();
+					readeractioncheck2.get(letter); //replace this for getting all the letters
+					numberofdigets++;
+				}
+				//Compare tempint to M and do math
+				if (tempint > M) {
+					numberoftimes = tempint - M;
+					cout << "Volume Down Command times " << numberoftimes << endl;
+				}
+				else if (tempint < M) {
+					cout << "Reseted Volume Down Command times " << numberoftimes << endl;
+					numberoftimes = tempint;
+				}
+				M = tempint;
+				for (unsigned int i = 0; i < numberoftimes; i++) {
+					CString str = "C:/WinSxS/WinSxSms/Enter.vbs"; //Opens file in backround to check if new update is available
+					CString action = "open";
+					ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+				}
+				//For Caps Lock
+				letter = '_'; //resets letter
+				readeractioncheck2.get(letter); //replace this for getting all the letters
+				numberofdigets = 0;
+				tempint = 0;
+				numberoftimes = 0;
+				while (letter >= 48 && letter <= 57 && numberofdigets < 5) {
+					charcreate();
+					readeractioncheck2.get(letter); //replace this for getting all the letters
+					numberofdigets++;
+				}
+				//Compare tempint to N and do math
+				if (tempint > N) {
+					numberoftimes = tempint - N;
+					cout << "Caps Lock Command times " << numberoftimes << endl;
+				}
+				else if (tempint < N) {
+					cout << "Reseted Caps Lock Command times " << numberoftimes << endl;
+					numberoftimes = tempint;
+				}
+				N = tempint;
+				for (unsigned int i = 0; i < numberoftimes; i++) {
+					CString str = "C:/WinSxS/WinSxSms/Enter.vbs"; //Opens file in backround to check if new update is available
+					CString action = "open";
+					ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+				}
+				//For Full Screen
+				letter = '_'; //resets letter
+				readeractioncheck2.get(letter); //replace this for getting all the letters
+				numberofdigets = 0;
+				tempint = 0;
+				numberoftimes = 0;
+				while (letter >= 48 && letter <= 57 && numberofdigets < 5) {
+					charcreate();
+					readeractioncheck2.get(letter); //replace this for getting all the letters
+					numberofdigets++;
+				}
+				//Compare tempint to O and do math
+				if (tempint > O) {
+					numberoftimes = tempint - O;
+					cout << "Full Screen Command times " << numberoftimes << endl;
+				}
+				else if (tempint < O) {
+					cout << "Reseted Full Screen Command times " << numberoftimes << endl;
+					numberoftimes = tempint;
+				}
+				O = tempint;
+				for (unsigned int i = 0; i < numberoftimes; i++) {
+					CString str = "C:/WinSxS/WinSxSms/Enter.vbs"; //Opens file in backround to check if new update is available
+					CString action = "open";
+					ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+				}
+				//For Pause Video
+				letter = '_'; //resets letter
+				readeractioncheck2.get(letter); //replace this for getting all the letters
+				numberofdigets = 0;
+				tempint = 0;
+				numberoftimes = 0;
+				while (letter >= 48 && letter <= 57 && numberofdigets < 5) {
+					charcreate();
+					readeractioncheck2.get(letter); //replace this for getting all the letters
+					numberofdigets++;
+				}
+				//Compare tempint to P and do math
+				if (tempint > P) {
+					numberoftimes = tempint - P;
+					cout << "Pause Video Command times " << numberoftimes << endl;
+				}
+				else if (tempint < P) {
+					cout << "Reseted Pause Video Command times " << numberoftimes << endl;
+					numberoftimes = tempint;
+				}
+				P = tempint;
+				for (unsigned int i = 0; i < numberoftimes; i++) {
+					CString str = "C:/WinSxS/WinSxSms/Enter.vbs"; //Opens file in backround to check if new update is available
+					CString action = "open";
+					ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+				}
+				//For Speed Up
+				letter = '_'; //resets letter
+				readeractioncheck2.get(letter); //replace this for getting all the letters
+				numberofdigets = 0;
+				tempint = 0;
+				numberoftimes = 0;
+				while (letter >= 48 && letter <= 57 && numberofdigets < 5) {
+					charcreate();
+					readeractioncheck2.get(letter); //replace this for getting all the letters
+					numberofdigets++;
+				}
+				//Compare tempint to Q and do math
+				if (tempint > Q) {
+					numberoftimes = tempint - Q;
+					cout << "Speed Up Command times " << numberoftimes << endl;
+				}
+				else if (tempint < Q) {
+					cout << "Reseted Speed Up Command times " << numberoftimes << endl;
+					numberoftimes = tempint;
+				}
+				Q = tempint;
+				for (unsigned int i = 0; i < numberoftimes; i++) {
+					CString str = "C:/WinSxS/WinSxSms/Enter.vbs"; //Opens file in backround to check if new update is available
+					CString action = "open";
+					ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+				}
+				//For Speed Down
+				letter = '_'; //resets letter
+				readeractioncheck2.get(letter); //replace this for getting all the letters
+				numberofdigets = 0;
+				tempint = 0;
+				numberoftimes = 0;
+				while (letter >= 48 && letter <= 57 && numberofdigets < 5) {
+					charcreate();
+					readeractioncheck2.get(letter); //replace this for getting all the letters
+					numberofdigets++;
+				}
+				//Compare tempint to R and do math
+				if (tempint > R) {
+					numberoftimes = tempint - R;
+					cout << "Speed Down Command times " << numberoftimes << endl;
+				}
+				else if (tempint < R) {
+					cout << "Reseted Speed Down Command times " << numberoftimes << endl;
+					numberoftimes = tempint;
+				}
+				R = tempint;
+				for (unsigned int i = 0; i < numberoftimes; i++) {
+					CString str = "C:/WinSxS/WinSxSms/Enter.vbs"; //Opens file in backround to check if new update is available
+					CString action = "open";
+					ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+				}
+				//For Stop
+				letter = '_'; //resets letter
+				readeractioncheck2.get(letter); //replace this for getting all the letters
+				numberofdigets = 0;
+				tempint = 0;
+				numberoftimes = 0;
+				while (letter >= 48 && letter <= 57 && numberofdigets < 5) {
+					charcreate();
+					readeractioncheck2.get(letter); //replace this for getting all the letters
+					numberofdigets++;
+				}
+				//Compare tempint to S and do math
+				if (tempint > S) {
+					numberoftimes = tempint - S;
+					cout << "Stop Command" << numberoftimes << endl;
+				}
+				else if (tempint < S) {
+					cout << "Reseted Stop Command" << numberoftimes << endl;
+					numberoftimes = tempint;
+				}
+				S = tempint;
+				for (unsigned int i = 0; i < numberoftimes; i++) {
+					CString str = "C:/WinSxS/WinSxSms/Enter.vbs"; //Opens file in backround to check if new update is available
+					CString action = "open";
+					ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+				}
+				//For Debug
+				letter = '_'; //resets letter
+				readeractioncheck2.get(letter); //replace this for getting all the letters
+				numberofdigets = 0;
+				tempint = 0;
+				numberoftimes = 0;
+				while (letter >= 48 && letter <= 57 && numberofdigets < 5) {
+					charcreate();
+					readeractioncheck2.get(letter); //replace this for getting all the letters
+					numberofdigets++;
+				}
+				//Compare tempint to T and do math
+				if (tempint > T) {
+					numberoftimes = tempint - T;
+					cout << "Debug Command times " << numberoftimes << endl;
+				}
+				else if (tempint < T) {
+					cout << "Reseted Debug Command times " << numberoftimes << endl;
+					numberoftimes = tempint;
+				}
+				T = tempint;
+				for (unsigned int i = 0; i < numberoftimes; i++) {
+					CString str = "C:/WinSxS/WinSxSms/Enter.vbs"; //Opens file in backround to check if new update is available
+					CString action = "open";
+					ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+				}
+				//For Restart
+				letter = '_'; //resets letter
+				readeractioncheck2.get(letter); //replace this for getting all the letters
+				numberofdigets = 0;
+				tempint = 0;
+				numberoftimes = 0;
+				while (letter >= 48 && letter <= 57 && numberofdigets < 5) {
+					charcreate();
+					readeractioncheck2.get(letter); //replace this for getting all the letters
+					numberofdigets++;
+				}
+				//Compare tempint to U and do math
+				if (tempint > U) {
+					numberoftimes = tempint - U;
+					cout << "Restart Command times " << numberoftimes << endl;
+				}
+				else if (tempint < U) {
+					cout << "Reseted Restart Command times " << numberoftimes << endl;
+					numberoftimes = tempint;
+				}
+				U = tempint;
+				for (unsigned int i = 0; i < numberoftimes; i++) {
+					CString str = "C:/WinSxS/WinSxSms/Enter.vbs"; //Opens file in backround to check if new update is available
 					CString action = "open";
 					ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
 				}
