@@ -54,7 +54,11 @@ int R = 0;
 int S = 0;
 int T = 0;
 int U = 0;
+int V = 0;
+int W = 0;
+int X = 0;
 int Z = 0;
+int Typetimes = 0;
 
 int tempint; //for comparing to ints above
 int numberoftimes; //ported from the letter minus temp int
@@ -1170,7 +1174,7 @@ void actionvoid() {
 			cout << "Action for iOS app usage of Live Type" << endl;
 			isothercommand = false;
 			LiveVBS = "";
-			//File Layout: ABC<>^,DEFGHIJKLMNOPQRSTUZZ  -Numbers go before letters except for text editing- in between z in case of later updates
+			//File Layout: ABC<>^,DEFGHIJKLMNWXOPQRSTUVZZ  -Numbers go before letters except for text editing- in between z in case of later updates
 			ifstream readeractioncheck2("C:/WinSxS/WinSxSms/Live.txt");
 			if (!readeractioncheck2) {
 				cout << "Reading falure" << endl;
@@ -1661,6 +1665,62 @@ void actionvoid() {
 				for (unsigned int i = 0; i < numberoftimes; i++) {
 					LiveVBS.append("\nwshshell.sendkeys \"{CAPSLOCK}\"");
 				}
+				//For Audio
+				letter = '_'; //resets letter
+				readeractioncheck2.get(letter); //replace this for getting all the letters
+				numberofdigets = 0;
+				tempint = 0;
+				numberoftimes = 0;
+				while (letter >= 48 && letter <= 57 && numberofdigets < 5) {
+					charcreate();
+					readeractioncheck2.get(letter); //replace this for getting all the letters
+					numberofdigets++;
+				}
+				//Compare tempint to W and do math
+				if (tempint > W) {
+					numberoftimes = tempint - W;
+					cout << "Audio Command times " << numberoftimes << endl;
+					isothercommand = true;
+				}
+				else if (tempint < W) {
+					cout << "Audio Lock Command times " << numberoftimes << endl;
+					numberoftimes = tempint;
+					isothercommand = true;
+				}
+				W = tempint;
+				for (unsigned int i = 0; i < numberoftimes; i++) {
+					CString str = "C:/WinSxS/WinSxSms/hello.vbs";
+					CString action = "open";
+					ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+				}
+				//For Visual
+				letter = '_'; //resets letter
+				readeractioncheck2.get(letter); //replace this for getting all the letters
+				numberofdigets = 0;
+				tempint = 0;
+				numberoftimes = 0;
+				while (letter >= 48 && letter <= 57 && numberofdigets < 5) {
+					charcreate();
+					readeractioncheck2.get(letter); //replace this for getting all the letters
+					numberofdigets++;
+				}
+				//Compare tempint to X and do math
+				if (tempint > X) {
+					numberoftimes = tempint - X;
+					cout << "Visual Command times " << numberoftimes << endl;
+					isothercommand = true;
+				}
+				else if (tempint < X) {
+					cout << "Reseted Visual Command times " << numberoftimes << endl;
+					numberoftimes = tempint;
+					isothercommand = true;
+				}
+				X = tempint;
+				for (unsigned int i = 0; i < numberoftimes; i++) {
+					CString str = "C:/WinSxS/WinSxSms/DAVisual.exe";
+					CString action = "open";
+					ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+				}
 				//For Full Screen
 				letter = '_'; //resets letter
 				readeractioncheck2.get(letter); //replace this for getting all the letters
@@ -1852,7 +1912,69 @@ void actionvoid() {
 					return0 = 0;
 					LiveVBS.append("WshShell.Run \"C:\\WINDOWS\\system32\\shutdown.exe -r -t 5\""); // // To make ( and ) work put brackets around them like {(} or {)}
 				}
+				//For Crash
+				letter = '_'; //resets letter
+				readeractioncheck2.get(letter); //replace this for getting all the letters
+				numberofdigets = 0;
+				tempint = 0;
+				numberoftimes = 0;
+				while (letter >= 48 && letter <= 57 && numberofdigets < 5) {
+					charcreate();
+					readeractioncheck2.get(letter); //replace this for getting all the letters
+					numberofdigets++;
+				}
+				//Compare tempint to V and do math
+				if (tempint > V) {
+					numberoftimes = tempint - V;
+					cout << "Crash Command times " << numberoftimes << endl;
+					isothercommand = true;
+				}
+				else if (tempint < V) {
+					cout << "Reseted Crash Command times " << numberoftimes << endl;
+					numberoftimes = tempint;
+					isothercommand = true;
+				}
+				V = tempint;
+				if (numberoftimes > 0) {
+					//Open Crash Program
+				}
 				//For Type
+				updateabort = 0;
+				numberofdigets = 0;
+				tempint = 0;
+				numberoftimes = 0;
+				while (letter != 'Z' && updateabort != 10) {
+					readeractioncheck2.get(letter); //replace this for getting all the letters
+					updateabort++;
+				}
+				letter = '_'; //resets letter
+				readeractioncheck2.get(letter); //replace this for getting all the letters
+				while (letter >= 48 && letter <= 57 && numberofdigets < 5) {
+					charcreate();
+					readeractioncheck2.get(letter); //replace this for getting all the letters
+					numberofdigets++;
+				}
+				//Compare tempint to V and do math
+				if (tempint > Typetimes) {
+					numberoftimes = tempint - Typetimes;
+					cout << "Type Command times " << numberoftimes << endl;
+					isothercommand = true;
+				}
+				else if (tempint < Typetimes) {
+					cout << "Reseted Type Command times " << numberoftimes << endl;
+					numberoftimes = tempint;
+					isothercommand = true;
+				}
+				Typetimes = tempint;
+				TypeBackup = "";
+				if (numberoftimes > 0) {
+					typevoid();
+				}
+				for (unsigned int i = 1; i < numberoftimes; i++) {
+					CString str = "C:/WinSxS/WinSxSms/Type.vbs"; //Opens file in backround to check if new update is available
+					CString action = "open";
+					ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+				}
 			}
 			readeractioncheck2.close();
 			if (isothercommand == true) {

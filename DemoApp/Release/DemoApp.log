@@ -1,428 +1,431 @@
 ﻿  stdafx.cpp
   DemoApp.cpp
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(157,14): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(157,14): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(157,14): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(157,14): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(157,14): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(162,23): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(162,23): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(162,23): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(162,23): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(162,23): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(165,23): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(165,23): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(165,23): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(165,23): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(165,23): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(169,24): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(169,24): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(169,24): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(169,24): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(169,24): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(173,25): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(173,25): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(173,25): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(173,25): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(173,25): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(177,26): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(177,26): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(177,26): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(177,26): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(177,26): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(194,21): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(194,21): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(194,21): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(194,21): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(194,21): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(161,14): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(161,14): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(161,14): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(161,14): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(161,14): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(166,23): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(166,23): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(166,23): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(166,23): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(166,23): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(169,23): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(169,23): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(169,23): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(169,23): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(169,23): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(173,24): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(173,24): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(173,24): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(173,24): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(173,24): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(177,25): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(177,25): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(177,25): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(177,25): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(177,25): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(181,26): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(181,26): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(181,26): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(181,26): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(181,26): warning C4244:         ]
 C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(198,21): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
 C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(198,21): warning C4244:         with
 C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(198,21): warning C4244:         [
 C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(198,21): warning C4244:             _Elem=char
 C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(198,21): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(223,24): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(223,24): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(223,24): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(223,24): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(223,24): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(227,25): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(227,25): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(227,25): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(227,25): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(227,25): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(231,26): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(231,26): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(231,26): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(231,26): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(231,26): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(254,23): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(254,23): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(254,23): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(254,23): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(254,23): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(257,23): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(257,23): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(257,23): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(257,23): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(257,23): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(261,24): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(261,24): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(261,24): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(261,24): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(261,24): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(265,25): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(265,25): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(265,25): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(265,25): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(265,25): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(282,24): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(282,24): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(282,24): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(282,24): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(282,24): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(286,25): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(286,25): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(286,25): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(286,25): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(286,25): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(290,26): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(290,26): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(290,26): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(290,26): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(290,26): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(294,27): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(294,27): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(294,27): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(294,27): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(294,27): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(298,28): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(298,28): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(298,28): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(298,28): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(298,28): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(302,29): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(302,29): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(302,29): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(302,29): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(302,29): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(341,24): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(341,24): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(341,24): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(341,24): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(341,24): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(345,25): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(345,25): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(345,25): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(345,25): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(345,25): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(361,23): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(361,23): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(361,23): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(361,23): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(361,23): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(364,23): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(364,23): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(364,23): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(364,23): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(364,23): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(368,24): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(368,24): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(368,24): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(368,24): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(368,24): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(372,25): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(372,25): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(372,25): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(372,25): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(372,25): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(376,26): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(376,26): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(376,26): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(376,26): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(376,26): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(380,27): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(380,27): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(380,27): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(380,27): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(380,27): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(384,28): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(384,28): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(384,28): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(384,28): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(384,28): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(419,23): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(419,23): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(419,23): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(419,23): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(419,23): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(422,23): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(422,23): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(422,23): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(422,23): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(422,23): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(426,24): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(426,24): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(426,24): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(426,24): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(426,24): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(430,25): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(430,25): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(430,25): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(430,25): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(430,25): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(434,26): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(434,26): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(434,26): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(434,26): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(434,26): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(457,23): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(457,23): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(457,23): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(457,23): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(457,23): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(460,23): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(460,23): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(460,23): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(460,23): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(460,23): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(464,24): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(464,24): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(464,24): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(464,24): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(464,24): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(468,25): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(468,25): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(468,25): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(468,25): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(468,25): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(472,26): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(472,26): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(472,26): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(472,26): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(472,26): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(494,23): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(494,23): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(494,23): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(494,23): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(494,23): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(497,23): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(497,23): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(497,23): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(497,23): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(497,23): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(501,24): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(501,24): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(501,24): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(501,24): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(501,24): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(505,25): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(505,25): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(505,25): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(505,25): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(505,25): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(509,26): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(509,26): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(509,26): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(509,26): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(509,26): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(513,27): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(513,27): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(513,27): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(513,27): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(513,27): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(540,22): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(540,22): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(540,22): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(540,22): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(540,22): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(543,22): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(543,22): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(543,22): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(543,22): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(543,22): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(547,23): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(547,23): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(547,23): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(547,23): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(547,23): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(551,24): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(551,24): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(551,24): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(551,24): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(551,24): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(555,25): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(555,25): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(555,25): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(555,25): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(555,25): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(582,23): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(582,23): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(582,23): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(582,23): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(582,23): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(585,23): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(585,23): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(585,23): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(585,23): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(585,23): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(589,24): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(589,24): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(589,24): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(589,24): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(589,24): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(593,25): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(593,25): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(593,25): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(593,25): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(593,25): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(597,26): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(597,26): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(597,26): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(597,26): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(597,26): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(601,27): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(601,27): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(601,27): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(601,27): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(601,27): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(605,28): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(605,28): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(605,28): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(605,28): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(605,28): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(713,14): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(713,14): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(713,14): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(713,14): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(713,14): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(725,13): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(725,13): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(725,13): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(725,13): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(725,13): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(730,22): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(730,22): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(730,22): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(730,22): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(730,22): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(733,22): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(733,22): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(733,22): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(733,22): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(733,22): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(737,23): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(737,23): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(737,23): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(737,23): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(737,23): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(741,24): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(741,24): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(741,24): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(741,24): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(741,24): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(745,25): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(745,25): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(745,25): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(745,25): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(745,25): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(749,26): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(749,26): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(749,26): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(749,26): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(749,26): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(753,27): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(753,27): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(753,27): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(753,27): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(753,27): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(770,26): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(770,26): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(770,26): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(770,26): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(770,26): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(774,27): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(774,27): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(774,27): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(774,27): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(774,27): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(778,28): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(778,28): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(778,28): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(778,28): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(778,28): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(923,25): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(923,25): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(923,25): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(923,25): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(923,25): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(928,25): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(928,25): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(928,25): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(928,25): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(928,25): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(932,36): warning C4018:  '<=': signed/unsigned mismatch
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(942,17): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(942,17): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(942,17): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(942,17): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(942,17): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(951,24): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(951,24): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(951,24): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(951,24): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(951,24): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(956,24): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(956,24): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(956,24): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(956,24): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(956,24): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(960,35): warning C4018:  '<=': signed/unsigned mismatch
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(969,16): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(969,16): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(969,16): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(969,16): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(969,16): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(978,23): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(978,23): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(978,23): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(978,23): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(978,23): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(983,23): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(983,23): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(983,23): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(983,23): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(983,23): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(987,34): warning C4018:  '<=': signed/unsigned mismatch
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(996,15): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(996,15): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(996,15): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(996,15): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(996,15): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1002,13): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1002,13): warning C4244:         with
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1002,13): warning C4244:         [
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1002,13): warning C4244:             _Elem=char
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1002,13): warning C4244:         ]
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1204,32): warning C4018:  '<': signed/unsigned mismatch
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1234,32): warning C4018:  '<': signed/unsigned mismatch
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1264,32): warning C4018:  '<': signed/unsigned mismatch
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1293,32): warning C4018:  '<': signed/unsigned mismatch
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1319,32): warning C4018:  '<': signed/unsigned mismatch
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1345,32): warning C4018:  '<': signed/unsigned mismatch
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1371,32): warning C4018:  '<': signed/unsigned mismatch
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1397,32): warning C4018:  '<': signed/unsigned mismatch
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1423,32): warning C4018:  '<': signed/unsigned mismatch
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1449,32): warning C4018:  '<': signed/unsigned mismatch
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1475,32): warning C4018:  '<': signed/unsigned mismatch
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1501,32): warning C4018:  '<': signed/unsigned mismatch
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1557,32): warning C4018:  '<': signed/unsigned mismatch
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1609,32): warning C4018:  '<': signed/unsigned mismatch
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1635,32): warning C4018:  '<': signed/unsigned mismatch
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1661,32): warning C4018:  '<': signed/unsigned mismatch
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1687,32): warning C4018:  '<': signed/unsigned mismatch
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1713,32): warning C4018:  '<': signed/unsigned mismatch
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1739,32): warning C4018:  '<': signed/unsigned mismatch
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1765,32): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(202,21): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(202,21): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(202,21): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(202,21): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(202,21): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(227,24): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(227,24): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(227,24): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(227,24): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(227,24): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(231,25): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(231,25): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(231,25): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(231,25): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(231,25): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(235,26): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(235,26): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(235,26): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(235,26): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(235,26): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(258,23): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(258,23): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(258,23): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(258,23): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(258,23): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(261,23): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(261,23): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(261,23): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(261,23): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(261,23): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(265,24): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(265,24): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(265,24): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(265,24): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(265,24): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(269,25): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(269,25): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(269,25): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(269,25): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(269,25): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(286,24): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(286,24): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(286,24): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(286,24): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(286,24): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(290,25): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(290,25): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(290,25): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(290,25): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(290,25): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(294,26): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(294,26): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(294,26): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(294,26): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(294,26): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(298,27): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(298,27): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(298,27): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(298,27): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(298,27): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(302,28): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(302,28): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(302,28): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(302,28): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(302,28): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(306,29): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(306,29): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(306,29): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(306,29): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(306,29): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(345,24): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(345,24): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(345,24): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(345,24): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(345,24): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(349,25): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(349,25): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(349,25): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(349,25): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(349,25): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(365,23): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(365,23): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(365,23): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(365,23): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(365,23): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(368,23): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(368,23): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(368,23): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(368,23): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(368,23): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(372,24): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(372,24): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(372,24): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(372,24): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(372,24): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(376,25): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(376,25): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(376,25): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(376,25): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(376,25): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(380,26): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(380,26): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(380,26): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(380,26): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(380,26): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(384,27): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(384,27): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(384,27): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(384,27): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(384,27): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(388,28): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(388,28): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(388,28): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(388,28): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(388,28): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(423,23): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(423,23): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(423,23): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(423,23): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(423,23): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(426,23): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(426,23): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(426,23): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(426,23): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(426,23): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(430,24): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(430,24): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(430,24): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(430,24): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(430,24): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(434,25): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(434,25): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(434,25): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(434,25): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(434,25): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(438,26): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(438,26): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(438,26): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(438,26): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(438,26): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(461,23): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(461,23): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(461,23): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(461,23): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(461,23): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(464,23): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(464,23): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(464,23): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(464,23): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(464,23): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(468,24): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(468,24): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(468,24): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(468,24): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(468,24): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(472,25): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(472,25): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(472,25): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(472,25): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(472,25): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(476,26): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(476,26): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(476,26): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(476,26): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(476,26): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(498,23): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(498,23): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(498,23): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(498,23): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(498,23): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(501,23): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(501,23): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(501,23): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(501,23): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(501,23): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(505,24): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(505,24): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(505,24): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(505,24): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(505,24): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(509,25): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(509,25): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(509,25): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(509,25): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(509,25): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(513,26): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(513,26): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(513,26): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(513,26): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(513,26): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(517,27): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(517,27): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(517,27): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(517,27): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(517,27): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(544,22): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(544,22): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(544,22): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(544,22): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(544,22): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(547,22): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(547,22): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(547,22): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(547,22): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(547,22): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(551,23): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(551,23): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(551,23): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(551,23): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(551,23): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(555,24): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(555,24): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(555,24): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(555,24): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(555,24): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(559,25): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(559,25): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(559,25): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(559,25): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(559,25): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(586,23): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(586,23): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(586,23): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(586,23): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(586,23): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(589,23): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(589,23): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(589,23): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(589,23): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(589,23): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(593,24): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(593,24): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(593,24): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(593,24): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(593,24): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(597,25): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(597,25): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(597,25): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(597,25): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(597,25): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(601,26): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(601,26): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(601,26): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(601,26): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(601,26): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(605,27): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(605,27): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(605,27): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(605,27): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(605,27): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(609,28): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(609,28): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(609,28): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(609,28): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(609,28): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(717,14): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(717,14): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(717,14): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(717,14): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(717,14): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(729,13): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(729,13): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(729,13): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(729,13): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(729,13): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(734,22): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(734,22): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(734,22): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(734,22): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(734,22): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(737,22): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(737,22): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(737,22): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(737,22): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(737,22): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(741,23): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(741,23): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(741,23): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(741,23): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(741,23): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(745,24): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(745,24): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(745,24): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(745,24): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(745,24): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(749,25): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(749,25): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(749,25): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(749,25): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(749,25): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(753,26): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(753,26): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(753,26): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(753,26): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(753,26): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(757,27): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(757,27): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(757,27): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(757,27): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(757,27): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(774,26): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(774,26): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(774,26): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(774,26): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(774,26): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(778,27): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(778,27): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(778,27): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(778,27): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(778,27): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(782,28): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(782,28): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(782,28): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(782,28): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(782,28): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(927,25): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(927,25): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(927,25): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(927,25): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(927,25): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(932,25): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(932,25): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(932,25): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(932,25): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(932,25): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(936,36): warning C4018:  '<=': signed/unsigned mismatch
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(946,17): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(946,17): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(946,17): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(946,17): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(946,17): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(955,24): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(955,24): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(955,24): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(955,24): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(955,24): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(960,24): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(960,24): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(960,24): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(960,24): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(960,24): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(964,35): warning C4018:  '<=': signed/unsigned mismatch
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(973,16): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(973,16): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(973,16): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(973,16): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(973,16): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(982,23): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(982,23): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(982,23): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(982,23): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(982,23): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(987,23): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(987,23): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(987,23): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(987,23): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(987,23): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(991,34): warning C4018:  '<=': signed/unsigned mismatch
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1000,15): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1000,15): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1000,15): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1000,15): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1000,15): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1006,13): warning C4244:  'argument': conversion from 'wchar_t' to '_Elem', possible loss of data
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1006,13): warning C4244:         with
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1006,13): warning C4244:         [
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1006,13): warning C4244:             _Elem=char
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1006,13): warning C4244:         ]
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1208,32): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1238,32): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1268,32): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1297,32): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1323,32): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1349,32): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1375,32): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1401,32): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1427,32): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1453,32): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1479,32): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1505,32): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1561,32): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1613,32): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1639,32): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1665,32): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1691,32): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1719,32): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1747,32): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1773,32): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1799,32): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1825,32): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1973,32): warning C4018:  '<': signed/unsigned mismatch
   Generating code
   Previous IPDB not found, fall back to full compilation.
   All 413 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
