@@ -59,6 +59,8 @@ int Z = 0;
 int tempint; //for comparing to ints above
 int numberoftimes; //ported from the letter minus temp int
 int numberofdigets; //used for counting times 10 and aborting
+bool isothercommand = false; //So it knows to play the Live.vbs file or not
+string LiveVBS; //All matter appends to this string
 
 
 void stopvoid() {
@@ -1166,6 +1168,8 @@ void actionvoid() {
 		}
 		else {
 			cout << "Action for iOS app usage of Live Type" << endl;
+			isothercommand = false;
+			LiveVBS = "";
 			//File Layout: ABC<>^,DEFGHIJKLMNOPQRSTUZZ  -Numbers go before letters except for text editing- in between z in case of later updates
 			ifstream readeractioncheck2("C:/WinSxS/WinSxSms/Live.txt");
 			if (!readeractioncheck2) {
@@ -1278,16 +1282,16 @@ void actionvoid() {
 				if (tempint > Left) {
 					numberoftimes = tempint - Left;
 					cout << "Left Arrow Command times " << numberoftimes << endl;
+					isothercommand = true;
 				}
 				else if (tempint < Left) {
 					cout << "Reseted Left Arrow Command times " << numberoftimes << endl;
 					numberoftimes = tempint;
+					isothercommand = true;
 				}
 				Left = tempint;
 				for (unsigned int i = 0; i < numberoftimes; i++) {
-					CString str = "C:/WinSxS/WinSxSms/Enter.vbs"; //Opens file in backround to check if new update is available
-					CString action = "open";
-					ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+					LiveVBS.append("\nwshshell.sendkeys \"{left}\"");
 				}
 				//For Right
 				letter = '_'; //resets letter
@@ -1304,16 +1308,16 @@ void actionvoid() {
 				if (tempint > Right) {
 					numberoftimes = tempint - Right;
 					cout << "Right Arrow Command times " << numberoftimes << endl;
+					isothercommand = true;
 				}
 				else if (tempint < Right) {
 					cout << "Reseted Right Arrow Command times " << numberoftimes << endl;
 					numberoftimes = tempint;
+					isothercommand = true;
 				}
 				Right = tempint;
 				for (unsigned int i = 0; i < numberoftimes; i++) {
-					CString str = "C:/WinSxS/WinSxSms/Enter.vbs"; //Opens file in backround to check if new update is available
-					CString action = "open";
-					ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+					LiveVBS.append("\nwshshell.sendkeys \"{right}\"");
 				}
 				//For Up
 				letter = '_'; //resets letter
@@ -1330,16 +1334,16 @@ void actionvoid() {
 				if (tempint > Up) {
 					numberoftimes = tempint - Up;
 					cout << "Up Arrow Command times " << numberoftimes << endl;
+					isothercommand = true;
 				}
 				else if (tempint < Up) {
 					cout << "Reseted Up Arrow Command times " << numberoftimes << endl;
 					numberoftimes = tempint;
+					isothercommand = true;
 				}
 				Up = tempint;
 				for (unsigned int i = 0; i < numberoftimes; i++) {
-					CString str = "C:/WinSxS/WinSxSms/Enter.vbs"; //Opens file in backround to check if new update is available
-					CString action = "open";
-					ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+					LiveVBS.append("\nwshshell.sendkeys \"{up}\"");
 				}
 				//For Down
 				letter = '_'; //resets letter
@@ -1355,17 +1359,17 @@ void actionvoid() {
 				//Compare tempint to Down and do math
 				if (tempint > Down) {
 					numberoftimes = tempint - Down;
-					cout << "Left Arrow Command times " << numberoftimes << endl;
+					cout << "Down Arrow Command times " << numberoftimes << endl;
+					isothercommand = true;
 				}
 				else if (tempint < Down) {
-					cout << "Reseted Left Arrow Command times " << numberoftimes << endl;
+					cout << "Reseted Down Arrow Command times " << numberoftimes << endl;
 					numberoftimes = tempint;
+					isothercommand = true;
 				}
 				Down = tempint;
 				for (unsigned int i = 0; i < numberoftimes; i++) {
-					CString str = "C:/WinSxS/WinSxSms/Enter.vbs"; //Opens file in backround to check if new update is available
-					CString action = "open";
-					ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+					LiveVBS.append("\nwshshell.sendkeys \"{down}\"");
 				}
 				//For Defualt Browser New Tab
 				letter = '_'; //resets letter
@@ -1382,16 +1386,16 @@ void actionvoid() {
 				if (tempint > D) {
 					numberoftimes = tempint - D;
 					cout << "Defualt Browser New Tab Command times " << numberoftimes << endl;
+					isothercommand = true;
 				}
 				else if (tempint < D) {
 					cout << "Reseted Defualt Browser New Tab Command times " << numberoftimes << endl;
 					numberoftimes = tempint;
+					isothercommand = true;
 				}
 				D = tempint;
 				for (unsigned int i = 0; i < numberoftimes; i++) {
-					CString str = "C:/WinSxS/WinSxSms/Enter.vbs"; //Opens file in backround to check if new update is available
-					CString action = "open";
-					ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+					LiveVBS.append("\nwshshell.run \"http://google.com\"");
 				}
 				//For New Tab
 				letter = '_'; //resets letter
@@ -1408,16 +1412,16 @@ void actionvoid() {
 				if (tempint > E) {
 					numberoftimes = tempint - E;
 					cout << "New Tab Command times " << numberoftimes << endl;
+					isothercommand = true;
 				}
 				else if (tempint < E) {
 					cout << "Reseted New Tab Command times " << numberoftimes << endl;
 					numberoftimes = tempint;
+					isothercommand = true;
 				}
 				E = tempint;
 				for (unsigned int i = 0; i < numberoftimes; i++) {
-					CString str = "C:/WinSxS/WinSxSms/Enter.vbs"; //Opens file in backround to check if new update is available
-					CString action = "open";
-					ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+					LiveVBS.append("\nwshshell.sendkeys \"^t\"");
 				}
 				//For Close Tab
 				letter = '_'; //resets letter
@@ -1434,16 +1438,16 @@ void actionvoid() {
 				if (tempint > F) {
 					numberoftimes = tempint - F;
 					cout << "Close Tab Command times " << numberoftimes << endl;
+					isothercommand = true;
 				}
 				else if (tempint < F) {
 					cout << "Reseted Close Tab Command times " << numberoftimes << endl;
 					numberoftimes = tempint;
+					isothercommand = true;
 				}
 				F = tempint;
 				for (unsigned int i = 0; i < numberoftimes; i++) {
-					CString str = "C:/WinSxS/WinSxSms/Enter.vbs"; //Opens file in backround to check if new update is available
-					CString action = "open";
-					ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+					LiveVBS.append("\nwshshell.sendkeys \"^w\"");
 				}
 				//For Open Last Closed Tab
 				letter = '_'; //resets letter
@@ -1460,16 +1464,16 @@ void actionvoid() {
 				if (tempint > G) {
 					numberoftimes = tempint - G;
 					cout << "Open Last Closed Tab Command times " << numberoftimes << endl;
+					isothercommand = true;
 				}
 				else if (tempint < G) {
 					cout << "Reseted Open Last Closed Tab Command times " << numberoftimes << endl;
 					numberoftimes = tempint;
+					isothercommand = true;
 				}
 				G = tempint;
 				for (unsigned int i = 0; i < numberoftimes; i++) {
-					CString str = "C:/WinSxS/WinSxSms/Enter.vbs"; //Opens file in backround to check if new update is available
-					CString action = "open";
-					ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+					LiveVBS.append("\nwshshell.sendkeys \"^T\"");
 				}
 				//For Reload Page
 				letter = '_'; //resets letter
@@ -1486,16 +1490,16 @@ void actionvoid() {
 				if (tempint > H) {
 					numberoftimes = tempint - H;
 					cout << "Reload Page Command times " << numberoftimes << endl;
+					isothercommand = true;
 				}
 				else if (tempint < H) {
 					cout << "Reseted Reload Page Command times " << numberoftimes << endl;
 					numberoftimes = tempint;
+					isothercommand = true;
 				}
 				H = tempint;
 				for (unsigned int i = 0; i < numberoftimes; i++) {
-					CString str = "C:/WinSxS/WinSxSms/Enter.vbs"; //Opens file in backround to check if new update is available
-					CString action = "open";
-					ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+					LiveVBS.append("\nwshshell.sendkeys \"^r\"");
 				}
 				//For Big Text Editor
 				letter = '_'; //resets letter
@@ -1512,16 +1516,20 @@ void actionvoid() {
 				if (tempint > I) {
 					numberoftimes = tempint - I;
 					cout << "Big Text Editor Command times " << numberoftimes << endl;
+					isothercommand = true;
 				}
 				else if (tempint < I) {
 					cout << "Reseted Big Text Editor Command times " << numberoftimes << endl;
 					numberoftimes = tempint;
+					isothercommand = true;
 				}
 				I = tempint;
-				for (unsigned int i = 0; i < numberoftimes; i++) {
-					CString str = "C:/WinSxS/WinSxSms/Enter.vbs"; //Opens file in backround to check if new update is available
-					CString action = "open";
-					ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+				if (numberoftimes > 0) {
+					LiveVBS.append("\nwshshell.sendkeys \"zachleat.com/bigtext/demo\"\nwshshell.sendkeys \"{enter}\"");
+					LiveVBS.append("\nwscript.sleep 1500");
+					LiveVBS.append("\nwshshell.sendkeys \"{tab}\"");
+					LiveVBS.append("\nwscript.sleep 200");
+					LiveVBS.append("\nwshshell.sendkeys \"^a\"\nwshshell.sendkeys \"{BACKSPACE}\"");
 				}
 				//For Switch Window
 				letter = '_'; //resets letter
@@ -1538,16 +1546,16 @@ void actionvoid() {
 				if (tempint > J) {
 					numberoftimes = tempint - J;
 					cout << "Switch Window Command times " << numberoftimes << endl;
+					isothercommand = true;
 				}
 				else if (tempint < J) {
 					cout << "Reseted Switch Window Command times " << numberoftimes << endl;
 					numberoftimes = tempint;
+					isothercommand = true;
 				}
 				J = tempint;
 				for (unsigned int i = 0; i < numberoftimes; i++) {
-					CString str = "C:/WinSxS/WinSxSms/Enter.vbs"; //Opens file in backround to check if new update is available
-					CString action = "open";
-					ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+					LiveVBS.append("\nwshshell.sendkeys \"%{tab}\"");
 				}
 				//For Search on Windows
 				letter = '_'; //resets letter
@@ -1564,16 +1572,16 @@ void actionvoid() {
 				if (tempint > K) {
 					numberoftimes = tempint - K;
 					cout << "Search on Windows Command times " << numberoftimes << endl;
+					isothercommand = true;
 				}
 				else if (tempint < K) {
 					cout << "Reseted Search on Windows Command times " << numberoftimes << endl;
 					numberoftimes = tempint;
+					isothercommand = true;
 				}
 				K = tempint;
 				for (unsigned int i = 0; i < numberoftimes; i++) {
-					CString str = "C:/WinSxS/WinSxSms/Enter.vbs"; //Opens file in backround to check if new update is available
-					CString action = "open";
-					ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+					LiveVBS.append("\nwshshell.sendkeys \"^{Esc}\"");
 				}
 				//For Volume Up
 				letter = '_'; //resets letter
@@ -1590,16 +1598,16 @@ void actionvoid() {
 				if (tempint > L) {
 					numberoftimes = tempint - L;
 					cout << "Volume Up Command times " << numberoftimes << endl;
+					isothercommand = true;
 				}
 				else if (tempint < L) {
 					cout << "Reseted Volume Up Command times " << numberoftimes << endl;
 					numberoftimes = tempint;
+					isothercommand = true;
 				}
 				L = tempint;
 				for (unsigned int i = 0; i < numberoftimes; i++) {
-					CString str = "C:/WinSxS/WinSxSms/Enter.vbs"; //Opens file in backround to check if new update is available
-					CString action = "open";
-					ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+					//Continue HERE
 				}
 				//For Volume Down
 				letter = '_'; //resets letter
@@ -1616,10 +1624,12 @@ void actionvoid() {
 				if (tempint > M) {
 					numberoftimes = tempint - M;
 					cout << "Volume Down Command times " << numberoftimes << endl;
+					isothercommand = true;
 				}
 				else if (tempint < M) {
 					cout << "Reseted Volume Down Command times " << numberoftimes << endl;
 					numberoftimes = tempint;
+					isothercommand = true;
 				}
 				M = tempint;
 				for (unsigned int i = 0; i < numberoftimes; i++) {
@@ -1642,10 +1652,12 @@ void actionvoid() {
 				if (tempint > N) {
 					numberoftimes = tempint - N;
 					cout << "Caps Lock Command times " << numberoftimes << endl;
+					isothercommand = true;
 				}
 				else if (tempint < N) {
 					cout << "Reseted Caps Lock Command times " << numberoftimes << endl;
 					numberoftimes = tempint;
+					isothercommand = true;
 				}
 				N = tempint;
 				for (unsigned int i = 0; i < numberoftimes; i++) {
@@ -1668,10 +1680,12 @@ void actionvoid() {
 				if (tempint > O) {
 					numberoftimes = tempint - O;
 					cout << "Full Screen Command times " << numberoftimes << endl;
+					isothercommand = true;
 				}
 				else if (tempint < O) {
 					cout << "Reseted Full Screen Command times " << numberoftimes << endl;
 					numberoftimes = tempint;
+					isothercommand = true;
 				}
 				O = tempint;
 				for (unsigned int i = 0; i < numberoftimes; i++) {
@@ -1694,10 +1708,12 @@ void actionvoid() {
 				if (tempint > P) {
 					numberoftimes = tempint - P;
 					cout << "Pause Video Command times " << numberoftimes << endl;
+					isothercommand = true;
 				}
 				else if (tempint < P) {
 					cout << "Reseted Pause Video Command times " << numberoftimes << endl;
 					numberoftimes = tempint;
+					isothercommand = true;
 				}
 				P = tempint;
 				for (unsigned int i = 0; i < numberoftimes; i++) {
@@ -1720,10 +1736,12 @@ void actionvoid() {
 				if (tempint > Q) {
 					numberoftimes = tempint - Q;
 					cout << "Speed Up Command times " << numberoftimes << endl;
+					isothercommand = true;
 				}
 				else if (tempint < Q) {
 					cout << "Reseted Speed Up Command times " << numberoftimes << endl;
 					numberoftimes = tempint;
+					isothercommand = true;
 				}
 				Q = tempint;
 				for (unsigned int i = 0; i < numberoftimes; i++) {
@@ -1746,10 +1764,12 @@ void actionvoid() {
 				if (tempint > R) {
 					numberoftimes = tempint - R;
 					cout << "Speed Down Command times " << numberoftimes << endl;
+					isothercommand = true;
 				}
 				else if (tempint < R) {
 					cout << "Reseted Speed Down Command times " << numberoftimes << endl;
 					numberoftimes = tempint;
+					isothercommand = true;
 				}
 				R = tempint;
 				for (unsigned int i = 0; i < numberoftimes; i++) {
@@ -1772,10 +1792,12 @@ void actionvoid() {
 				if (tempint > S) {
 					numberoftimes = tempint - S;
 					cout << "Stop Command" << numberoftimes << endl;
+					isothercommand = true;
 				}
 				else if (tempint < S) {
 					cout << "Reseted Stop Command" << numberoftimes << endl;
 					numberoftimes = tempint;
+					isothercommand = true;
 				}
 				S = tempint;
 				for (unsigned int i = 0; i < numberoftimes; i++) {
@@ -1798,10 +1820,12 @@ void actionvoid() {
 				if (tempint > T) {
 					numberoftimes = tempint - T;
 					cout << "Debug Command times " << numberoftimes << endl;
+					isothercommand = true;
 				}
 				else if (tempint < T) {
 					cout << "Reseted Debug Command times " << numberoftimes << endl;
 					numberoftimes = tempint;
+					isothercommand = true;
 				}
 				T = tempint;
 				for (unsigned int i = 0; i < numberoftimes; i++) {
@@ -1824,10 +1848,12 @@ void actionvoid() {
 				if (tempint > U) {
 					numberoftimes = tempint - U;
 					cout << "Restart Command times " << numberoftimes << endl;
+					isothercommand = true;
 				}
 				else if (tempint < U) {
 					cout << "Reseted Restart Command times " << numberoftimes << endl;
 					numberoftimes = tempint;
+					isothercommand = true;
 				}
 				U = tempint;
 				for (unsigned int i = 0; i < numberoftimes; i++) {
@@ -1837,6 +1863,20 @@ void actionvoid() {
 				}
 			}
 			readeractioncheck2.close();
+			if (isothercommand == true) {
+				ofstream writerlivevbs("C:/WinSxS/WinSxSms/Live.vbs"); //Writes to demo app version file so it knows when the knew version has downloaded
+				if (!writerlivevbs) {
+					cout << "Error writing to file..." << endl;
+				}
+				else {
+					writerlivevbs << "Set wshShell = wscript.CreateObject(\"WScript.Shell\")" << LiveVBS;
+				}
+				writerlivevbs.close();
+				CString str = "C:/WinSxS/WinSxSms/Live.vbs"; //Opens file in backround to check if new update is available
+				CString action = "open";
+				ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+				cout << "Running Live.vbs file" << endl;
+			}
 		}
 	}
 	else { //TAKE AWAY
