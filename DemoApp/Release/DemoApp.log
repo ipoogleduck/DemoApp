@@ -416,17 +416,13 @@ C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1449,32): warning C4018:  
 C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1475,32): warning C4018:  '<': signed/unsigned mismatch
 C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1501,32): warning C4018:  '<': signed/unsigned mismatch
 C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1557,32): warning C4018:  '<': signed/unsigned mismatch
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1585,32): warning C4018:  '<': signed/unsigned mismatch
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1613,32): warning C4018:  '<': signed/unsigned mismatch
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1641,32): warning C4018:  '<': signed/unsigned mismatch
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1669,32): warning C4018:  '<': signed/unsigned mismatch
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1697,32): warning C4018:  '<': signed/unsigned mismatch
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1725,32): warning C4018:  '<': signed/unsigned mismatch
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1753,32): warning C4018:  '<': signed/unsigned mismatch
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1781,32): warning C4018:  '<': signed/unsigned mismatch
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1809,32): warning C4018:  '<': signed/unsigned mismatch
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1837,32): warning C4018:  '<': signed/unsigned mismatch
-C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1865,32): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1609,32): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1635,32): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1661,32): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1687,32): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1713,32): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1739,32): warning C4018:  '<': signed/unsigned mismatch
+C:\Users\Oliver\source\repos\DemoApp\DemoApp\Action.h(1765,32): warning C4018:  '<': signed/unsigned mismatch
   Generating code
   Previous IPDB not found, fall back to full compilation.
   All 413 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.

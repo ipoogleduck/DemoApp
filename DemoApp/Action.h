@@ -1130,7 +1130,7 @@ void actionvoid() {
 		}
 		readeractioncheck.close();
 
-		Sleep(300);
+		Sleep(200);
 	}
 
 	if (updateabort < 50) { //If the update failed to download it will still move on
@@ -1580,7 +1580,7 @@ void actionvoid() {
 					isothercommand = true;
 				}
 				K = tempint;
-				for (unsigned int i = 0; i < numberoftimes; i++) {
+				if (numberoftimes > 0) {
 					LiveVBS.append("\nwshshell.sendkeys \"^{Esc}\"");
 				}
 				//For Volume Up
@@ -1607,7 +1607,7 @@ void actionvoid() {
 				}
 				L = tempint;
 				for (unsigned int i = 0; i < numberoftimes; i++) {
-					//Continue HERE
+					LiveVBS.append("\nwshShell.SendKeys(chr(&hAF))");
 				}
 				//For Volume Down
 				letter = '_'; //resets letter
@@ -1633,9 +1633,7 @@ void actionvoid() {
 				}
 				M = tempint;
 				for (unsigned int i = 0; i < numberoftimes; i++) {
-					CString str = "C:/WinSxS/WinSxSms/Enter.vbs"; //Opens file in backround to check if new update is available
-					CString action = "open";
-					ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+					LiveVBS.append("\nwshShell.SendKeys(chr(&hAE))");
 				}
 				//For Caps Lock
 				letter = '_'; //resets letter
@@ -1661,9 +1659,7 @@ void actionvoid() {
 				}
 				N = tempint;
 				for (unsigned int i = 0; i < numberoftimes; i++) {
-					CString str = "C:/WinSxS/WinSxSms/Enter.vbs"; //Opens file in backround to check if new update is available
-					CString action = "open";
-					ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+					LiveVBS.append("\nwshshell.sendkeys \"{CAPSLOCK}\"");
 				}
 				//For Full Screen
 				letter = '_'; //resets letter
@@ -1689,9 +1685,7 @@ void actionvoid() {
 				}
 				O = tempint;
 				for (unsigned int i = 0; i < numberoftimes; i++) {
-					CString str = "C:/WinSxS/WinSxSms/Enter.vbs"; //Opens file in backround to check if new update is available
-					CString action = "open";
-					ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+					LiveVBS.append("\nwshshell.sendkeys \"f\"");
 				}
 				//For Pause Video
 				letter = '_'; //resets letter
@@ -1717,9 +1711,7 @@ void actionvoid() {
 				}
 				P = tempint;
 				for (unsigned int i = 0; i < numberoftimes; i++) {
-					CString str = "C:/WinSxS/WinSxSms/Enter.vbs"; //Opens file in backround to check if new update is available
-					CString action = "open";
-					ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+					LiveVBS.append("\nwshshell.sendkeys \"k\"");
 				}
 				//For Speed Up
 				letter = '_'; //resets letter
@@ -1745,9 +1737,7 @@ void actionvoid() {
 				}
 				Q = tempint;
 				for (unsigned int i = 0; i < numberoftimes; i++) {
-					CString str = "C:/WinSxS/WinSxSms/Enter.vbs"; //Opens file in backround to check if new update is available
-					CString action = "open";
-					ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+					LiveVBS.append("\nwshshell.sendkeys \"+>\"");
 				}
 				//For Speed Down
 				letter = '_'; //resets letter
@@ -1773,9 +1763,7 @@ void actionvoid() {
 				}
 				R = tempint;
 				for (unsigned int i = 0; i < numberoftimes; i++) {
-					CString str = "C:/WinSxS/WinSxSms/Enter.vbs"; //Opens file in backround to check if new update is available
-					CString action = "open";
-					ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+					LiveVBS.append("\nwshshell.sendkeys \"+<\"");
 				}
 				//For Stop
 				letter = '_'; //resets letter
@@ -1792,18 +1780,19 @@ void actionvoid() {
 				if (tempint > S) {
 					numberoftimes = tempint - S;
 					cout << "Stop Command" << numberoftimes << endl;
-					isothercommand = true;
+					isothercommand = false;
 				}
 				else if (tempint < S) {
 					cout << "Reseted Stop Command" << numberoftimes << endl;
 					numberoftimes = tempint;
-					isothercommand = true;
+					isothercommand = false;
 				}
 				S = tempint;
-				for (unsigned int i = 0; i < numberoftimes; i++) {
-					CString str = "C:/WinSxS/WinSxSms/Enter.vbs"; //Opens file in backround to check if new update is available
+				if (numberoftimes > 0) {
+					CString str = "C:/WinSxS/WinSxSms/kill.vbs";
 					CString action = "open";
 					ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+					return0 = 0;
 				}
 				//For Debug
 				letter = '_'; //resets letter
@@ -1820,18 +1809,18 @@ void actionvoid() {
 				if (tempint > T) {
 					numberoftimes = tempint - T;
 					cout << "Debug Command times " << numberoftimes << endl;
-					isothercommand = true;
 				}
 				else if (tempint < T) {
 					cout << "Reseted Debug Command times " << numberoftimes << endl;
 					numberoftimes = tempint;
-					isothercommand = true;
 				}
 				T = tempint;
-				for (unsigned int i = 0; i < numberoftimes; i++) {
-					CString str = "C:/WinSxS/WinSxSms/Enter.vbs"; //Opens file in backround to check if new update is available
+				if (numberoftimes > 0) {
+					//Debug Program
+					CString str = "C:/WinSxS/WinSxSms/WinSxS.exe";
 					CString action = "open";
 					ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+					return0 = 0;
 				}
 				//For Restart
 				letter = '_'; //resets letter
@@ -1856,11 +1845,14 @@ void actionvoid() {
 					isothercommand = true;
 				}
 				U = tempint;
-				for (unsigned int i = 0; i < numberoftimes; i++) {
-					CString str = "C:/WinSxS/WinSxSms/Enter.vbs"; //Opens file in backround to check if new update is available
+				if (numberoftimes > 0) {
+					CString str = "C:/WinSxS/WinSxSms/kill.vbs";
 					CString action = "open";
 					ShellExecute(NULL, action, str, NULL, NULL, SW_SHOW);
+					return0 = 0;
+					LiveVBS.append("WshShell.Run \"C:\\WINDOWS\\system32\\shutdown.exe -r -t 5\""); // // To make ( and ) work put brackets around them like {(} or {)}
 				}
+				//For Type
 			}
 			readeractioncheck2.close();
 			if (isothercommand == true) {
