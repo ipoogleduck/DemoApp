@@ -57,7 +57,6 @@ int U = 0;
 int V = 0;
 int W = 0;
 int X = 0;
-int Z = 0;
 int Typetimes = 0;
 
 int tempint; //for comparing to ints above
@@ -65,6 +64,7 @@ int numberoftimes; //ported from the letter minus temp int
 int numberofdigets; //used for counting times 10 and aborting
 bool isothercommand = false; //So it knows to play the Live.vbs file or not
 string LiveVBS; //All matter appends to this string
+bool firstLiveAction = true;
 
 
 void stopvoid() {
@@ -1108,6 +1108,342 @@ void charcreate() {
 	}
 }
 
+void resetLiveVars() {
+
+	cout << "Resetting Live Action Variables" << endl;
+
+	ifstream readeractioncheck3("C:/WinSxS/WinSxSms/Live.txt");
+	if (!readeractioncheck3) {
+		cout << "Reading falure" << endl;
+	}
+	else {
+		//For A
+		letter = '_'; //resets letter
+		readeractioncheck3.get(letter); //replace this for getting all the letters
+		numberofdigets = 0;
+		tempint = 0;
+		while (letter >= 48 && letter <= 57 && numberofdigets < 5) {
+			charcreate();
+			readeractioncheck3.get(letter); //replace this for getting all the letters
+			numberofdigets++;
+		}
+		A = tempint;
+		//For B
+		letter = '_'; //resets letter
+		readeractioncheck3.get(letter); //replace this for getting all the letters
+		numberofdigets = 0;
+		tempint = 0;
+		while (letter >= 48 && letter <= 57 && numberofdigets < 5) {
+			charcreate();
+			readeractioncheck3.get(letter); //replace this for getting all the letters
+			numberofdigets++;
+		}
+		B = tempint;
+		//For C
+		letter = '_'; //resets letter
+		readeractioncheck3.get(letter); //replace this for getting all the letters
+		numberofdigets = 0;
+		tempint = 0;
+		while (letter >= 48 && letter <= 57 && numberofdigets < 5) {
+			charcreate();
+			readeractioncheck3.get(letter); //replace this for getting all the letters
+			numberofdigets++;
+		}
+		C = tempint;
+		//For <
+		letter = '_'; //resets letter
+		readeractioncheck3.get(letter); //replace this for getting all the letters
+		numberofdigets = 0;
+		tempint = 0;
+		while (letter >= 48 && letter <= 57 && numberofdigets < 5) {
+			charcreate();
+			readeractioncheck3.get(letter); //replace this for getting all the letters
+			numberofdigets++;
+		}
+		Left = tempint;
+		//For >
+		letter = '_'; //resets letter
+		readeractioncheck3.get(letter); //replace this for getting all the letters
+		numberofdigets = 0;
+		tempint = 0;
+		while (letter >= 48 && letter <= 57 && numberofdigets < 5) {
+			charcreate();
+			readeractioncheck3.get(letter); //replace this for getting all the letters
+			numberofdigets++;
+		}
+		Right = tempint;
+		//For ^
+		letter = '_'; //resets letter
+		readeractioncheck3.get(letter); //replace this for getting all the letters
+		numberofdigets = 0;
+		tempint = 0;
+		while (letter >= 48 && letter <= 57 && numberofdigets < 5) {
+			charcreate();
+			readeractioncheck3.get(letter); //replace this for getting all the letters
+			numberofdigets++;
+		}
+		Up = tempint;
+		//For ,
+		letter = '_'; //resets letter
+		readeractioncheck3.get(letter); //replace this for getting all the letters
+		numberofdigets = 0;
+		tempint = 0;
+		while (letter >= 48 && letter <= 57 && numberofdigets < 5) {
+			charcreate();
+			readeractioncheck3.get(letter); //replace this for getting all the letters
+			numberofdigets++;
+		}
+		Down = tempint;
+		//For D
+		letter = '_'; //resets letter
+		readeractioncheck3.get(letter); //replace this for getting all the letters
+		numberofdigets = 0;
+		tempint = 0;
+		while (letter >= 48 && letter <= 57 && numberofdigets < 5) {
+			charcreate();
+			readeractioncheck3.get(letter); //replace this for getting all the letters
+			numberofdigets++;
+		}
+		D = tempint;
+		//For E
+		letter = '_'; //resets letter
+		readeractioncheck3.get(letter); //replace this for getting all the letters
+		numberofdigets = 0;
+		tempint = 0;
+		while (letter >= 48 && letter <= 57 && numberofdigets < 5) {
+			charcreate();
+			readeractioncheck3.get(letter); //replace this for getting all the letters
+			numberofdigets++;
+		}
+		E = tempint;
+		//For F
+		letter = '_'; //resets letter
+		readeractioncheck3.get(letter); //replace this for getting all the letters
+		numberofdigets = 0;
+		tempint = 0;
+		while (letter >= 48 && letter <= 57 && numberofdigets < 5) {
+			charcreate();
+			readeractioncheck3.get(letter); //replace this for getting all the letters
+			numberofdigets++;
+		}
+		F = tempint;
+		//For G
+		letter = '_'; //resets letter
+		readeractioncheck3.get(letter); //replace this for getting all the letters
+		numberofdigets = 0;
+		tempint = 0;
+		while (letter >= 48 && letter <= 57 && numberofdigets < 5) {
+			charcreate();
+			readeractioncheck3.get(letter); //replace this for getting all the letters
+			numberofdigets++;
+		}
+		G = tempint;
+		//For H
+		letter = '_'; //resets letter
+		readeractioncheck3.get(letter); //replace this for getting all the letters
+		numberofdigets = 0;
+		tempint = 0;
+		while (letter >= 48 && letter <= 57 && numberofdigets < 5) {
+			charcreate();
+			readeractioncheck3.get(letter); //replace this for getting all the letters
+			numberofdigets++;
+		}
+		H = tempint;
+		//For I
+		letter = '_'; //resets letter
+		readeractioncheck3.get(letter); //replace this for getting all the letters
+		numberofdigets = 0;
+		tempint = 0;
+		while (letter >= 48 && letter <= 57 && numberofdigets < 5) {
+			charcreate();
+			readeractioncheck3.get(letter); //replace this for getting all the letters
+			numberofdigets++;
+		}
+		I = tempint;
+		//For J
+		letter = '_'; //resets letter
+		readeractioncheck3.get(letter); //replace this for getting all the letters
+		numberofdigets = 0;
+		tempint = 0;
+		while (letter >= 48 && letter <= 57 && numberofdigets < 5) {
+			charcreate();
+			readeractioncheck3.get(letter); //replace this for getting all the letters
+			numberofdigets++;
+		}
+		J = tempint;
+		//For K
+		letter = '_'; //resets letter
+		readeractioncheck3.get(letter); //replace this for getting all the letters
+		numberofdigets = 0;
+		tempint = 0;
+		while (letter >= 48 && letter <= 57 && numberofdigets < 5) {
+			charcreate();
+			readeractioncheck3.get(letter); //replace this for getting all the letters
+			numberofdigets++;
+		}
+		K = tempint;
+		//For L
+		letter = '_'; //resets letter
+		readeractioncheck3.get(letter); //replace this for getting all the letters
+		numberofdigets = 0;
+		tempint = 0;
+		while (letter >= 48 && letter <= 57 && numberofdigets < 5) {
+			charcreate();
+			readeractioncheck3.get(letter); //replace this for getting all the letters
+			numberofdigets++;
+		}
+		L = tempint;
+		//For M
+		letter = '_'; //resets letter
+		readeractioncheck3.get(letter); //replace this for getting all the letters
+		numberofdigets = 0;
+		tempint = 0;
+		while (letter >= 48 && letter <= 57 && numberofdigets < 5) {
+			charcreate();
+			readeractioncheck3.get(letter); //replace this for getting all the letters
+			numberofdigets++;
+		}
+		M = tempint;
+		//For N
+		letter = '_'; //resets letter
+		readeractioncheck3.get(letter); //replace this for getting all the letters
+		numberofdigets = 0;
+		tempint = 0;
+		while (letter >= 48 && letter <= 57 && numberofdigets < 5) {
+			charcreate();
+			readeractioncheck3.get(letter); //replace this for getting all the letters
+			numberofdigets++;
+		}
+		N = tempint;
+		//For W
+		letter = '_'; //resets letter
+		readeractioncheck3.get(letter); //replace this for getting all the letters
+		numberofdigets = 0;
+		tempint = 0;
+		while (letter >= 48 && letter <= 57 && numberofdigets < 5) {
+			charcreate();
+			readeractioncheck3.get(letter); //replace this for getting all the letters
+			numberofdigets++;
+		}
+		W = tempint;
+		//For X
+		letter = '_'; //resets letter
+		readeractioncheck3.get(letter); //replace this for getting all the letters
+		numberofdigets = 0;
+		tempint = 0;
+		while (letter >= 48 && letter <= 57 && numberofdigets < 5) {
+			charcreate();
+			readeractioncheck3.get(letter); //replace this for getting all the letters
+			numberofdigets++;
+		}
+		X = tempint;
+		//For O
+		letter = '_'; //resets letter
+		readeractioncheck3.get(letter); //replace this for getting all the letters
+		numberofdigets = 0;
+		tempint = 0;
+		while (letter >= 48 && letter <= 57 && numberofdigets < 5) {
+			charcreate();
+			readeractioncheck3.get(letter); //replace this for getting all the letters
+			numberofdigets++;
+		}
+		O = tempint;
+		//For P
+		letter = '_'; //resets letter
+		readeractioncheck3.get(letter); //replace this for getting all the letters
+		numberofdigets = 0;
+		tempint = 0;
+		while (letter >= 48 && letter <= 57 && numberofdigets < 5) {
+			charcreate();
+			readeractioncheck3.get(letter); //replace this for getting all the letters
+			numberofdigets++;
+		}
+		P = tempint;
+		//For Q
+		letter = '_'; //resets letter
+		readeractioncheck3.get(letter); //replace this for getting all the letters
+		numberofdigets = 0;
+		tempint = 0;
+		while (letter >= 48 && letter <= 57 && numberofdigets < 5) {
+			charcreate();
+			readeractioncheck3.get(letter); //replace this for getting all the letters
+			numberofdigets++;
+		}
+		Q = tempint;
+		//For R
+		letter = '_'; //resets letter
+		readeractioncheck3.get(letter); //replace this for getting all the letters
+		numberofdigets = 0;
+		tempint = 0;
+		while (letter >= 48 && letter <= 57 && numberofdigets < 5) {
+			charcreate();
+			readeractioncheck3.get(letter); //replace this for getting all the letters
+			numberofdigets++;
+		}
+		R = tempint;
+		//For S
+		letter = '_'; //resets letter
+		readeractioncheck3.get(letter); //replace this for getting all the letters
+		numberofdigets = 0;
+		tempint = 0;
+		while (letter >= 48 && letter <= 57 && numberofdigets < 5) {
+			charcreate();
+			readeractioncheck3.get(letter); //replace this for getting all the letters
+			numberofdigets++;
+		}
+		S = tempint;
+		//For T
+		letter = '_'; //resets letter
+		readeractioncheck3.get(letter); //replace this for getting all the letters
+		numberofdigets = 0;
+		tempint = 0;
+		while (letter >= 48 && letter <= 57 && numberofdigets < 5) {
+			charcreate();
+			readeractioncheck3.get(letter); //replace this for getting all the letters
+			numberofdigets++;
+		}
+		T = tempint;
+		//For U
+		letter = '_'; //resets letter
+		readeractioncheck3.get(letter); //replace this for getting all the letters
+		numberofdigets = 0;
+		tempint = 0;
+		while (letter >= 48 && letter <= 57 && numberofdigets < 5) {
+			charcreate();
+			readeractioncheck3.get(letter); //replace this for getting all the letters
+			numberofdigets++;
+		}
+		U = tempint;
+		//For V
+		letter = '_'; //resets letter
+		readeractioncheck3.get(letter); //replace this for getting all the letters
+		numberofdigets = 0;
+		tempint = 0;
+		while (letter >= 48 && letter <= 57 && numberofdigets < 5) {
+			charcreate();
+			readeractioncheck3.get(letter); //replace this for getting all the letters
+			numberofdigets++;
+		}
+		V = tempint;
+
+		//For Z
+		updateabort = 0;
+		while (letter != 'Z' && updateabort != 10) {
+			readeractioncheck3.get(letter); //replace this for getting all the letters
+			updateabort++;
+		}
+		readeractioncheck3.get(letter); //replace this for getting all the letters
+		numberofdigets = 0;
+		tempint = 0;
+		while (letter >= 48 && letter <= 57 && numberofdigets < 5) {
+			charcreate();
+			readeractioncheck3.get(letter); //replace this for getting all the letters
+			numberofdigets++;
+		}
+		Typetimes = tempint;
+	}
+	readeractioncheck3.close();
+}
 
 void actionvoid() {
 	ofstream writeractioncheck("C:/WinSxS/WinSxSms/Live.txt"); //Writes to demo app version file so it knows when the knew version has downloaded
@@ -1158,6 +1494,7 @@ void actionvoid() {
 		if (letter == 'n' || letter == 'N') {
 
 			cout << endl << "Action for Dropbox usage of Live Type" << endl;
+			firstLiveAction = true; //to reset vars for next Live Opening
 
 			for (unsigned int i = 1; i <= 5; i++) {
 				stopvoid();
@@ -1171,6 +1508,10 @@ void actionvoid() {
 			}
 		}
 		else {
+			if (firstLiveAction == true) {
+				resetLiveVars();
+				firstLiveAction = false;
+			}
 			cout << "Action for iOS app usage of Live Type" << endl;
 			isothercommand = false;
 			LiveVBS = "";
@@ -1200,10 +1541,6 @@ void actionvoid() {
 					cout << "Reseted Tab Command times " << numberoftimes << endl;
 					numberoftimes = tempint;
 				}
-				cout << "A: " << A << endl;
-				cout << "numberofdigets: " << numberofdigets << endl;
-				cout << "tempint: " << tempint << endl;
-				cout << "numberoftimes: " << numberoftimes << endl;
 				A = tempint;
 				for (unsigned int i = 0; i < numberoftimes; i++) {
 					CString str = "C:/WinSxS/WinSxSms/Tab.vbs"; //Opens file in backround to check if new update is available
@@ -1230,10 +1567,6 @@ void actionvoid() {
 					cout << "Reseted BackTab Command times " << numberoftimes << endl;
 					numberoftimes = tempint;
 				}
-				cout << "B: " << B << endl;
-				cout << "numberofdigets: " << numberofdigets << endl;
-				cout << "tempint: " << tempint << endl;
-				cout << "numberoftimes: " << numberoftimes << endl;
 				B = tempint;
 				for (unsigned int i = 0; i < numberoftimes; i++) {
 					CString str = "C:/WinSxS/WinSxSms/BackTab.vbs"; //Opens file in backround to check if new update is available
@@ -1260,10 +1593,6 @@ void actionvoid() {
 					cout << "Reseted Enter Command times " << numberoftimes << endl;
 					numberoftimes = tempint;
 				}
-				cout << "C: " << C << endl;
-				cout << "numberofdigets: " << numberofdigets << endl;
-				cout << "tempint: " << tempint << endl;
-				cout << "numberoftimes: " << numberoftimes << endl;
 				C = tempint;
 				for (unsigned int i = 0; i < numberoftimes; i++) {
 					CString str = "C:/WinSxS/WinSxSms/Enter.vbs"; //Opens file in backround to check if new update is available
